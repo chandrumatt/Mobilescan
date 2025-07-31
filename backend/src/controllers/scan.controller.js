@@ -18,6 +18,7 @@ exports.handleScan = async (req, res) => {
   const yara = await yaraScan(file.path);
   const regex = await regexScan(file.path);
   const ml = await mlScore(file.path);
+  // const  aleappResult = await runAleapp(file.path,ext);
 
   let sqliteScanResult = null;
   let aleappResult = null;

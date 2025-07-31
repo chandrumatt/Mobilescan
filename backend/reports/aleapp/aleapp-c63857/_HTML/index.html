@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ALEAPP Report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="_elements/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="_elements/Roboto.css">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Highlight.js -->
+        <link rel="stylesheet" href="_elements/highlight.min.css">
+        <script src="_elements/highlight.min.js"></script>
+        <!-- Cal-Heatmap -->
+        <script src="_elements/d3.v7.min.js"></script>
+        <script src="_elements/cal-heatmap.min.js"></script>
+        <link rel="stylesheet" href="_elements/cal-heatmap.css">
+        <script src="_elements/popper.min.js"></script>
+        <script src="_elements/Tooltip.min.js"></script>
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chat.css">
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+        <link href="_elements/timeline/css/timeline.min.css" rel="stylesheet" />
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">ALEAPP 3.4.0</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky" id="sidebar_id">
+                    <ul class="nav flex-column">
+
+        <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            Saved Reports
+        </h6>
+        
+        <li class="nav-item">
+            <a class="nav-link  active" href="index.html">
+                <span data-feather="home"></span> Report Home
+            </a>
+        </li>
+        
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <img src="_elements/ALEAPP_banner.png" alt="ALEAPP banner">
+                    <h3 class="display-5">Android Logs Events And Protobuf Parser</h1>
+                    <h6 class="animated fadeIn mb-3">ALEAPP is an open source project that aims to parse every known Android artifact for the purpose of forensic analysis.</h6>
+                </div>
+<br />
+                   <div class="card bg-white" style="padding: 20px;">
+                   <h2 class="card-title">Case Information</h2>
+               
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="case-tab" data-toggle="tab" href="#case" role="tab" aria-controls="case" aria-selected="true">Details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="device-list-tab" data-toggle="tab" href="#device" role="tab" aria-controls="device" aria-selected="false">Device details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="run-log-tab" data-toggle="tab" href="#run" role="tab" aria-controls="run" aria-selected="false">Script run log</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="files-list-tab" data-toggle="tab" href="#files" role="tab" aria-controls="files" aria-selected="false">Processed files list</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="case" role="tabpanel" aria-labelledby="case-tab"><br />
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-sm" width="70%">
+                <tbody>
+        <tr><tr><td>Extraction location</td><td>uploads/814b9da1b909c1e8e250eeb6cd5e1b76</td></tr><tr><td>Extraction type</td><td>zip</td></tr><tr><td>Report directory</td><td>/Users/chandru/Projects/Matt-project/yara/Mobile_Forensics/backend/reports/aleapp/aleapp-c63857/ALEAPP_Reports_2025-07-31_Thursday_094351</td></tr><tr><td>Processing time</td><td>00:00:00 (Total 0.046728957997402176 seconds)</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+            <p class="note note-primary mb-4">
+            All dates and times are in UTC unless noted otherwise!
+            </p>
+        </div>
+        <div class="tab-pane fade" id="device" role="tabpanel" aria-labelledby="device-tab"><br /><br>
+</div>
+        <div class="tab-pane fade text-monospace" id="run" role="tabpanel" aria-labelledby="script-run-tab"><br />Processing started. Please wait. This may take a few minutes...<br>
+
+--------------------------------------------------------------------------------------<br>
+ALEAPP v3.4.0: ALEAPP Logs, Events, and Protobuf Parser<br>
+Objective: Triage Android Full System Extractions.<br>
+By: Alexis Brignoni | @AlexisBrignoni | abrignoni.com<br>
+By: Yogesh Khatri   | @SwiftForensics | swiftforensics.com
+<br>
+Info: 304 modules loaded.<br>
+Artifact categories to parse: 304<br>
+File/Directory selected: uploads/814b9da1b909c1e8e250eeb6cd5e1b76<br>
+
+--------------------------------------------------------------------------------------<br>
+<br>
+usagestatsVersion [usagestatsVersion] artifact started<br>
+No file found<br>
+usagestatsVersion [usagestatsVersion] artifact completed<br>
+<br>
+package_info [packageInfo] artifact started<br>
+No file found<br>
+package_info [packageInfo] artifact completed<br>
+<br>
+GarminJson [GarminJson] artifact started<br>
+No file found<br>
+GarminJson [GarminJson] artifact completed<br>
+<br>
+protonVPN User [protonVPN] artifact started<br>
+No file found<br>
+protonVPN User [protonVPN] artifact completed<br>
+<br>
+atrackerdetect [atrackerdetect] artifact started<br>
+No file found<br>
+atrackerdetect [atrackerdetect] artifact completed<br>
+<br>
+Build [build] artifact started<br>
+No file found<br>
+Build [build] artifact completed<br>
+<br>
+PikPak Cloud List [pikpakCloudlist] artifact started<br>
+No file found<br>
+PikPak Cloud List [pikpakCloudlist] artifact completed<br>
+<br>
+GoogleFitGMS [googleFitGMS] artifact started<br>
+No file found<br>
+GoogleFitGMS [googleFitGMS] artifact completed<br>
+<br>
+sms_mms [smsmms] artifact started<br>
+No file found<br>
+sms_mms [smsmms] artifact completed<br>
+<br>
+FCM_Skype [FCMQueuedMessagesSkype] artifact started<br>
+No file found<br>
+FCM_Skype [FCMQueuedMessagesSkype] artifact completed<br>
+<br>
+FCM_Teams [FCMQueuedMessagesSkype] artifact started<br>
+No file found<br>
+FCM_Teams [FCMQueuedMessagesSkype] artifact completed<br>
+<br>
+googleMapsSearches [googleMapsSearches] artifact started<br>
+No file found<br>
+googleMapsSearches [googleMapsSearches] artifact completed<br>
+<br>
+Call Logs [calllogs] artifact started<br>
+No file found<br>
+Call Logs [calllogs] artifact completed<br>
+<br>
+playgroundVault [playgroundVault] artifact started<br>
+No file found<br>
+playgroundVault [playgroundVault] artifact completed<br>
+<br>
+browserCachefirefox [browserCachefirefox] artifact started<br>
+No file found<br>
+browserCachefirefox [browserCachefirefox] artifact completed<br>
+<br>
+ChessComFriends [ChessComFriends] artifact started<br>
+No file found<br>
+ChessComFriends [ChessComFriends] artifact completed<br>
+<br>
+siminfo [siminfo] artifact started<br>
+No file found<br>
+siminfo [siminfo] artifact completed<br>
+<br>
+App Locker [appLockerfishingnet] artifact started<br>
+No file found<br>
+App Locker [appLockerfishingnet] artifact completed<br>
+<br>
+GarminLog [GarminLog] artifact started<br>
+No file found<br>
+GarminLog [GarminLog] artifact completed<br>
+<br>
+Imo [imo] artifact started<br>
+No file found<br>
+Imo [imo] artifact completed<br>
+<br>
+Bumble [bumble] artifact started<br>
+No file found<br>
+Bumble [bumble] artifact completed<br>
+<br>
+Cast [Cast] artifact started<br>
+No file found<br>
+Cast [Cast] artifact completed<br>
+<br>
+runtimePerms [runtimePerms] artifact started<br>
+No file found<br>
+runtimePerms [runtimePerms] artifact completed<br>
+<br>
+Bash History [BashHistory] artifact started<br>
+No file found<br>
+Bash History [BashHistory] artifact completed<br>
+<br>
+smanagerCrash [smanagerCrash] artifact started<br>
+No file found<br>
+smanagerCrash [smanagerCrash] artifact completed<br>
+<br>
+GarminDailies [GarminDailies] artifact started<br>
+No file found<br>
+GarminDailies [GarminDailies] artifact completed<br>
+<br>
+PikPak Play [pikpakPlay] artifact started<br>
+No file found<br>
+PikPak Play [pikpakPlay] artifact completed<br>
+<br>
+VLC [vlcMedia] artifact started<br>
+No file found<br>
+VLC [vlcMedia] artifact completed<br>
+<br>
+Libretorrent [libretorrent] artifact started<br>
+No file found<br>
+Libretorrent [libretorrent] artifact completed<br>
+<br>
+airtagAlerts [airtagAndroid] artifact started<br>
+No file found<br>
+airtagAlerts [airtagAndroid] artifact completed<br>
+<br>
+airtagScans [airtagAndroid] artifact started<br>
+No file found<br>
+airtagScans [airtagAndroid] artifact completed<br>
+<br>
+airtagLastScan [airtagAndroid] artifact started<br>
+No file found<br>
+airtagLastScan [airtagAndroid] artifact completed<br>
+<br>
+airtagPassiveScan [airtagAndroid] artifact started<br>
+No file found<br>
+airtagPassiveScan [airtagAndroid] artifact completed<br>
+<br>
+torrentinfo [torrentinfo] artifact started<br>
+No file found<br>
+torrentinfo [torrentinfo] artifact completed<br>
+<br>
+GroupMe [groupMe] artifact started<br>
+No file found<br>
+GroupMe [groupMe] artifact completed<br>
+<br>
+Google Maps GMM [googleMapsGmm] artifact started<br>
+No file found<br>
+Google Maps GMM [googleMapsGmm] artifact completed<br>
+<br>
+Life360DriverBehavior [life360DriverBehavior] artifact started<br>
+No file found<br>
+Life360DriverBehavior [life360DriverBehavior] artifact completed<br>
+<br>
+blueskysearches [blueskysearches] artifact started<br>
+No file found<br>
+blueskysearches [blueskysearches] artifact completed<br>
+<br>
+battery_usage_v4 [battery_usage_v4] artifact started<br>
+No file found<br>
+battery_usage_v4 [battery_usage_v4] artifact completed<br>
+<br>
+suggestions [suggestions] artifact started<br>
+No file found<br>
+suggestions [suggestions] artifact completed<br>
+<br>
+pkgPredictions [pkgPredictions] artifact started<br>
+No file found<br>
+pkgPredictions [pkgPredictions] artifact completed<br>
+<br>
+AdidasUser [AdidasUser] artifact started<br>
+No file found<br>
+AdidasUser [AdidasUser] artifact completed<br>
+<br>
+BadooChat [BadooChat] artifact started<br>
+No file found<br>
+BadooChat [BadooChat] artifact completed<br>
+<br>
+Contacts [contacts] artifact started<br>
+No file found<br>
+Contacts [contacts] artifact completed<br>
+<br>
+AirGuard [airGuard] artifact started<br>
+No file found<br>
+AirGuard [airGuard] artifact completed<br>
+<br>
+smyfilesTrash [smyfilesTrash] artifact started<br>
+No file found<br>
+smyfilesTrash [smyfilesTrash] artifact completed<br>
+<br>
+wifiConfigstore2 [wifiConfigstore2] artifact started<br>
+No file found<br>
+wifiConfigstore2 [wifiConfigstore2] artifact completed<br>
+<br>
+K9MailData [K9Mail] artifact started<br>
+No file found<br>
+K9MailData [K9Mail] artifact completed<br>
+<br>
+EmulatedSmeta [emulatedSmeta] artifact started<br>
+No file found<br>
+EmulatedSmeta [emulatedSmeta] artifact completed<br>
+<br>
+Firefox [firefox] artifact started<br>
+No file found<br>
+Firefox [firefox] artifact completed<br>
+<br>
+GoogleNowPlaying [googleNowPlaying] artifact started<br>
+No file found<br>
+GoogleNowPlaying [googleNowPlaying] artifact completed<br>
+<br>
+FairEmailAccounts [FairEmail] artifact started<br>
+No file found<br>
+FairEmailAccounts [FairEmail] artifact completed<br>
+<br>
+FairEmailContacts [FairEmail] artifact started<br>
+No file found<br>
+FairEmailContacts [FairEmail] artifact completed<br>
+<br>
+Googlemapaudio [googlemapaudio] artifact started<br>
+No file found<br>
+Googlemapaudio [googlemapaudio] artifact completed<br>
+<br>
+Podcast Addict [PodcastAddict] artifact started<br>
+No file found<br>
+Podcast Addict [PodcastAddict] artifact completed<br>
+<br>
+PikPak Downloads [pikpakDownloads] artifact started<br>
+No file found<br>
+PikPak Downloads [pikpakDownloads] artifact completed<br>
+<br>
+WhatsApp [WhatsApp] artifact started<br>
+No file found<br>
+WhatsApp [WhatsApp] artifact completed<br>
+<br>
+recentactivity [recentactivity] artifact started<br>
+No file found<br>
+recentactivity [recentactivity] artifact completed<br>
+<br>
+GarminNotifications [GarminNotifications] artifact started<br>
+No file found<br>
+GarminNotifications [GarminNotifications] artifact completed<br>
+<br>
+walStrings [walStrings] artifact started<br>
+No file found<br>
+walStrings [walStrings] artifact completed<br>
+<br>
+burnerSubscription [burnerSubscription] artifact started<br>
+No file found<br>
+burnerSubscription [burnerSubscription] artifact completed<br>
+<br>
+TorrentData [torrentData] artifact started<br>
+No file found<br>
+TorrentData [torrentData] artifact completed<br>
+<br>
+Etc_hosts [etc_hosts] artifact started<br>
+No file found<br>
+Etc_hosts [etc_hosts] artifact completed<br>
+<br>
+PumaActivities [PumaActivities] artifact started<br>
+No file found<br>
+PumaActivities [PumaActivities] artifact completed<br>
+<br>
+Fitbit [fitbit] artifact started<br>
+No file found<br>
+Fitbit [fitbit] artifact completed<br>
+<br>
+appops [appops] artifact started<br>
+No file found<br>
+appops [appops] artifact completed<br>
+<br>
+wifiProfiles [wifiProfiles] artifact started<br>
+No file found<br>
+wifiProfiles [wifiProfiles] artifact completed<br>
+<br>
+ChessComMessages [ChessComMessages] artifact started<br>
+No file found<br>
+ChessComMessages [ChessComMessages] artifact completed<br>
+<br>
+ChromeNetworkActionPredictor [chromeNetworkActionPredictor] artifact started<br>
+No file found<br>
+ChromeNetworkActionPredictor [chromeNetworkActionPredictor] artifact completed<br>
+<br>
+roles [roles] artifact started<br>
+No file found<br>
+roles [roles] artifact completed<br>
+<br>
+FirefoxPermissions [firefoxPermissions] artifact started<br>
+No file found<br>
+FirefoxPermissions [firefoxPermissions] artifact completed<br>
+<br>
+VerizonRDD-Battery [VerizonRDDAnalytics] artifact started<br>
+No file found<br>
+VerizonRDD-Battery [VerizonRDDAnalytics] artifact completed<br>
+<br>
+FirefoxCookies [firefoxCookies] artifact started<br>
+No file found<br>
+FirefoxCookies [firefoxCookies] artifact completed<br>
+<br>
+oldpowerOffReset [oldpowerOffReset] artifact started<br>
+No file found<br>
+oldpowerOffReset [oldpowerOffReset] artifact completed<br>
+<br>
+smanagerLow [smanagerLow] artifact started<br>
+No file found<br>
+smanagerLow [smanagerLow] artifact completed<br>
+<br>
+Cache Location [cachelocation] artifact started<br>
+No file found<br>
+Cache Location [cachelocation] artifact completed<br>
+<br>
+GarminPresistent [GarminPersistent] artifact started<br>
+No file found<br>
+GarminPresistent [GarminPersistent] artifact completed<br>
+<br>
+persistentProp [persistentProp] artifact started<br>
+No file found<br>
+persistentProp [persistentProp] artifact completed<br>
+<br>
+VLC Thumbs ADB [vlcthumbsADB] artifact started<br>
+No file found<br>
+VLC Thumbs ADB [vlcthumbsADB] artifact completed<br>
+<br>
+ChessComGames [ChessComGames] artifact started<br>
+No file found<br>
+ChessComGames [ChessComGames] artifact completed<br>
+<br>
+adb_hosts [adb_hosts] artifact started<br>
+No file found<br>
+adb_hosts [adb_hosts] artifact completed<br>
+<br>
+GooglePlaySearches [googlePlaySearches] artifact started<br>
+No file found<br>
+GooglePlaySearches [googlePlaySearches] artifact completed<br>
+<br>
+smyFiles [smyFiles] artifact started<br>
+No file found<br>
+smyFiles [smyFiles] artifact completed<br>
+<br>
+mastodon [mastodon] artifact started<br>
+No file found<br>
+mastodon [mastodon] artifact completed<br>
+<br>
+hikvision [hikvision] artifact started<br>
+No file found<br>
+hikvision [hikvision] artifact completed<br>
+<br>
+ChromeBookmarks [chromeBookmarks] artifact started<br>
+No file found<br>
+ChromeBookmarks [chromeBookmarks] artifact completed<br>
+<br>
+shutdown_checkpoints [shutdown_checkpoints] artifact started<br>
+No file found<br>
+shutdown_checkpoints [shutdown_checkpoints] artifact completed<br>
+<br>
+GoogleMessages [googleMessages] artifact started<br>
+No file found<br>
+GoogleMessages [googleMessages] artifact completed<br>
+<br>
+NikeNotifications [NikeNotifications] artifact started<br>
+No file found<br>
+NikeNotifications [NikeNotifications] artifact completed<br>
+<br>
+Usagehistory [usageHistory] artifact started<br>
+No file found<br>
+Usagehistory [usageHistory] artifact completed<br>
+<br>
+protonmail [protonmail] artifact started<br>
+No file found<br>
+protonmail [protonmail] artifact completed<br>
+<br>
+keepNotes [keepNotes] artifact started<br>
+No file found<br>
+keepNotes [keepNotes] artifact completed<br>
+<br>
+GarminCharts [GarminChart] artifact started<br>
+No file found<br>
+GarminCharts [GarminChart] artifact completed<br>
+<br>
+FCM_Dump [FCMQueuedMessagesDump] artifact started<br>
+No file found<br>
+FCM_Dump [FCMQueuedMessagesDump] artifact completed<br>
+<br>
+scontextLog [scontextLog] artifact started<br>
+No file found<br>
+scontextLog [scontextLog] artifact completed<br>
+<br>
+discordChats [discordChats] artifact started<br>
+No file found<br>
+discordChats [discordChats] artifact completed<br>
+<br>
+LibretorrentFR [libretorrentFR] artifact started<br>
+No file found<br>
+LibretorrentFR [libretorrentFR] artifact completed<br>
+<br>
+FacebookMessenger [FacebookMessenger] artifact started<br>
+No file found<br>
+FacebookMessenger [FacebookMessenger] artifact completed<br>
+<br>
+smembersEvents [smembersEvents] artifact started<br>
+No file found<br>
+smembersEvents [smembersEvents] artifact completed<br>
+<br>
+line [line] artifact started<br>
+No file found<br>
+line [line] artifact completed<br>
+<br>
+shareit [shareit] artifact started<br>
+No file found<br>
+shareit [shareit] artifact completed<br>
+<br>
+GarminPolyline [GarminPolyline] artifact started<br>
+No file found<br>
+GarminPolyline [GarminPolyline] artifact completed<br>
+<br>
+GarminGcmJsonActivities [GarminGcmJsonActivities] artifact started<br>
+No file found<br>
+GarminGcmJsonActivities [GarminGcmJsonActivities] artifact completed<br>
+<br>
+Android Notification History [notificationHistory] artifact started<br>
+No file found<br>
+Android Notification History [notificationHistory] artifact completed<br>
+<br>
+GboardCache [gboard] artifact started<br>
+No file found<br>
+GboardCache [gboard] artifact completed<br>
+<br>
+NikeActivities [NikeActivities] artifact started<br>
+No file found<br>
+NikeActivities [NikeActivities] artifact completed<br>
+<br>
+ChromeDIPS [chromeDIPS] artifact started<br>
+No file found<br>
+ChromeDIPS [chromeDIPS] artifact completed<br>
+<br>
+accounts_ce [accounts_ce] artifact started<br>
+No file found<br>
+accounts_ce [accounts_ce] artifact completed<br>
+<br>
+accounts_ce_authtokens [accounts_ce] artifact started<br>
+No file found<br>
+accounts_ce_authtokens [accounts_ce] artifact completed<br>
+<br>
+sWipehist [sWipehist] artifact started<br>
+No file found<br>
+sWipehist [sWipehist] artifact completed<br>
+<br>
+browserCachechrome [browserCachechrome] artifact started<br>
+No file found<br>
+browserCachechrome [browserCachechrome] artifact completed<br>
+<br>
+teams [teams] artifact started<br>
+No file found<br>
+teams [teams] artifact completed<br>
+<br>
+GoogleChat [googleChat] artifact started<br>
+No file found<br>
+GoogleChat [googleChat] artifact completed<br>
+<br>
+wifiHotspot [wifiHotspot] artifact started<br>
+No file found<br>
+wifiHotspot [wifiHotspot] artifact completed<br>
+<br>
+torrentResumeinfo [torrentResumeinfo] artifact started<br>
+No file found<br>
+torrentResumeinfo [torrentResumeinfo] artifact completed<br>
+<br>
+Quicksearch_recent [googleQuickSearchboxRecent] artifact started<br>
+No file found<br>
+Quicksearch_recent [googleQuickSearchboxRecent] artifact completed<br>
+<br>
+ImagemngCache [imagemngCache] artifact started<br>
+No file found<br>
+ImagemngCache [imagemngCache] artifact completed<br>
+<br>
+GarminFacebook USES INTERNET [GarminFacebook] artifact started<br>
+No file found<br>
+GarminFacebook USES INTERNET [GarminFacebook] artifact completed<br>
+<br>
+get_kleinanzeigenaccount [kleinanzeigen.de] artifact started<br>
+No file found<br>
+get_kleinanzeigenaccount [kleinanzeigen.de] artifact completed<br>
+<br>
+get_kleinanzeigenrecentsearchescache [kleinanzeigen.de] artifact started<br>
+No file found<br>
+get_kleinanzeigenrecentsearchescache [kleinanzeigen.de] artifact completed<br>
+<br>
+get_kleinanzeigennonresettablerecentsearchescache [kleinanzeigen.de] artifact started<br>
+No file found<br>
+get_kleinanzeigennonresettablerecentsearchescache [kleinanzeigen.de] artifact completed<br>
+<br>
+get_kleinanzeigenmessagebox [kleinanzeigen.de] artifact started<br>
+No file found<br>
+get_kleinanzeigenmessagebox [kleinanzeigen.de] artifact completed<br>
+<br>
+tangomessage [tangomessage] artifact started<br>
+No file found<br>
+tangomessage [tangomessage] artifact completed<br>
+<br>
+GarminStepsAPI [GarminStepsAPI] artifact started<br>
+No file found<br>
+GarminStepsAPI [GarminStepsAPI] artifact completed<br>
+<br>
+burnerContacts [burnerContacts] artifact started<br>
+No file found<br>
+burnerContacts [burnerContacts] artifact completed<br>
+<br>
+FCM_Instagram [FCMQueuedMessagesInstagram] artifact started<br>
+No file found<br>
+FCM_Instagram [FCMQueuedMessagesInstagram] artifact completed<br>
+<br>
+FCM_XBox [FCMQueuedMessagesXbox] artifact started<br>
+No file found<br>
+FCM_XBox [FCMQueuedMessagesXbox] artifact completed<br>
+<br>
+ChromeLoginData [chromeLoginData] artifact started<br>
+No file found<br>
+ChromeLoginData [chromeLoginData] artifact completed<br>
+<br>
+frosting [frosting] artifact started<br>
+No file found<br>
+frosting [frosting] artifact completed<br>
+<br>
+AdidasGoals [AdidasGoals] artifact started<br>
+No file found<br>
+AdidasGoals [AdidasGoals] artifact completed<br>
+<br>
+settingsSecure [settingsSecure] artifact started<br>
+No file found<br>
+settingsSecure [settingsSecure] artifact completed<br>
+<br>
+Errp [errp] artifact started<br>
+No file found<br>
+Errp [errp] artifact completed<br>
+<br>
+Gmail [gmailEmails] artifact started<br>
+No file found<br>
+Gmail [gmailEmails] artifact completed<br>
+<br>
+Calendar [googleCalendar] artifact started<br>
+No file found<br>
+Calendar [googleCalendar] artifact completed<br>
+<br>
+accounts_de [accounts_de] artifact started<br>
+No file found<br>
+accounts_de [accounts_de] artifact completed<br>
+<br>
+vaulty_info [vaulty_info] artifact started<br>
+No file found<br>
+vaulty_info [vaulty_info] artifact completed<br>
+<br>
+FirefoxRecentlyClosedTabs [firefoxRecentlyClosedTabs] artifact started<br>
+No file found<br>
+FirefoxRecentlyClosedTabs [firefoxRecentlyClosedTabs] artifact completed<br>
+<br>
+urlUserprefs [ulrUserprefs] artifact started<br>
+No file found<br>
+urlUserprefs [ulrUserprefs] artifact completed<br>
+<br>
+Turbo_Battery [Turbo_Battery] artifact started<br>
+No file found<br>
+Turbo_Battery [Turbo_Battery] artifact completed<br>
+<br>
+GarminActAPI [GarminActAPI] artifact started<br>
+No file found<br>
+GarminActAPI [GarminActAPI] artifact completed<br>
+<br>
+MSAuthenticatorAccounts [MicrosoftAuthenticator] artifact started<br>
+No file found<br>
+MSAuthenticatorAccounts [MicrosoftAuthenticator] artifact completed<br>
+<br>
+googleInitiatedNav [googleInitiatedNav] artifact started<br>
+No file found<br>
+googleInitiatedNav [googleInitiatedNav] artifact completed<br>
+<br>
+Garmin [garmin] artifact started<br>
+No file found<br>
+Garmin [garmin] artifact completed<br>
+<br>
+likee_location [likee] artifact started<br>
+No file found<br>
+likee_location [likee] artifact completed<br>
+<br>
+likee_databases [likee] artifact started<br>
+No file found<br>
+likee_databases [likee] artifact completed<br>
+<br>
+Oruxmaps [Oruxmaps] artifact started<br>
+No file found<br>
+Oruxmaps [Oruxmaps] artifact completed<br>
+<br>
+Xender [Xender] artifact started<br>
+No file found<br>
+Xender [Xender] artifact completed<br>
+<br>
+Downloads [downloads] artifact started<br>
+No file found<br>
+Downloads [downloads] artifact completed<br>
+<br>
+swellbeing [swellbeing] artifact started<br>
+No file found<br>
+swellbeing [swellbeing] artifact completed<br>
+<br>
+kijijiLocalUserInfo [kijijiLocalUserInfo] artifact started<br>
+No file found<br>
+kijijiLocalUserInfo [kijijiLocalUserInfo] artifact completed<br>
+<br>
+GarminSleep [GarminSleep] artifact started<br>
+No file found<br>
+GarminSleep [GarminSleep] artifact completed<br>
+<br>
+GooglePhotos [googlePhotos] artifact started<br>
+No file found<br>
+GooglePhotos [googlePhotos] artifact completed<br>
+<br>
+ChromeMediaHistory [chromeMediaHistory] artifact started<br>
+No file found<br>
+ChromeMediaHistory [chromeMediaHistory] artifact completed<br>
+<br>
+GoogleCallScreen [googleCallScreen] artifact started<br>
+No file found<br>
+GoogleCallScreen [googleCallScreen] artifact completed<br>
+<br>
+Factory_reset [factory_reset] artifact started<br>
+No file found<br>
+Factory_reset [factory_reset] artifact completed<br>
+<br>
+Dahua Technology (DMSS) [dmss] artifact started<br>
+No file found<br>
+Dahua Technology (DMSS) [dmss] artifact completed<br>
+<br>
+GarminResponse [GarminResponse] artifact started<br>
+No file found<br>
+GarminResponse [GarminResponse] artifact completed<br>
+<br>
+sRecoveryhist [sRecoveryhist] artifact started<br>
+No file found<br>
+sRecoveryhist [sRecoveryhist] artifact completed<br>
+<br>
+pSettings [pSettings] artifact started<br>
+No file found<br>
+pSettings [pSettings] artifact completed<br>
+<br>
+RunkeeperActivities [RunkeeperActivities] artifact started<br>
+No file found<br>
+RunkeeperActivities [RunkeeperActivities] artifact completed<br>
+<br>
+Browser Location [browserlocation] artifact started<br>
+No file found<br>
+Browser Location [browserlocation] artifact completed<br>
+<br>
+FirefoxFormHistory [firefoxFormHistory] artifact started<br>
+No file found<br>
+FirefoxFormHistory [firefoxFormHistory] artifact completed<br>
+<br>
+usageapps [usageapps] artifact started<br>
+No file found<br>
+usageapps [usageapps] artifact completed<br>
+<br>
+WordsWithFriends [WordsWithFriends] artifact started<br>
+No file found<br>
+WordsWithFriends [WordsWithFriends] artifact completed<br>
+<br>
+sms_mms_backup [smsmmsBackup] artifact started<br>
+No file found<br>
+sms_mms_backup [smsmmsBackup] artifact completed<br>
+<br>
+GarminSPO2 [GarminSPo2] artifact started<br>
+No file found<br>
+GarminSPO2 [GarminSPo2] artifact completed<br>
+<br>
+GmailActive [gmail] artifact started<br>
+No file found<br>
+GmailActive [gmail] artifact completed<br>
+<br>
+FCM_Twitter [FCMQueuedMessagesTwitter] artifact started<br>
+No file found<br>
+FCM_Twitter [FCMQueuedMessagesTwitter] artifact completed<br>
+<br>
+snapchat [snapchat] artifact started<br>
+No file found<br>
+snapchat [snapchat] artifact completed<br>
+<br>
+DiscreteNative [discreteNative] artifact started<br>
+No file found<br>
+DiscreteNative [discreteNative] artifact completed<br>
+<br>
+ChromeAutofill [chromeAutofill] artifact started<br>
+No file found<br>
+ChromeAutofill [chromeAutofill] artifact completed<br>
+<br>
+GoogleKeepNotes [googleKeepNotes] artifact started<br>
+No file found<br>
+GoogleKeepNotes [googleKeepNotes] artifact completed<br>
+<br>
+smembersAppInv [smembersAppInv] artifact started<br>
+No file found<br>
+smembersAppInv [smembersAppInv] artifact completed<br>
+<br>
+battery_usage_v9 [battery_usage_v9] artifact started<br>
+No file found<br>
+battery_usage_v9 [battery_usage_v9] artifact completed<br>
+<br>
+app_battery_usage_v9 [battery_usage_v9] artifact started<br>
+No file found<br>
+app_battery_usage_v9 [battery_usage_v9] artifact completed<br>
+<br>
+Burner [burner] artifact started<br>
+No file found<br>
+Burner [burner] artifact completed<br>
+<br>
+VLC Thumbs [vlcThumbs] artifact started<br>
+No file found<br>
+VLC Thumbs [vlcThumbs] artifact completed<br>
+<br>
+Todoist [Todoist] artifact started<br>
+No file found<br>
+Todoist [Todoist] artifact completed<br>
+<br>
+Teleguard [teleguard] artifact started<br>
+No file found<br>
+Teleguard [teleguard] artifact completed<br>
+<br>
+ChromeOfflinePages [chromeOfflinePages] artifact started<br>
+No file found<br>
+ChromeOfflinePages [chromeOfflinePages] artifact completed<br>
+<br>
+googleDuo [googleDuo] artifact started<br>
+No file found<br>
+googleDuo [googleDuo] artifact completed<br>
+<br>
+burnerUser [burnerUser] artifact started<br>
+No file found<br>
+burnerUser [burnerUser] artifact completed<br>
+<br>
+ChessWithFriends [ChessWithFriends] artifact started<br>
+No file found<br>
+ChessWithFriends [ChessWithFriends] artifact completed<br>
+<br>
+Viber [Viber] artifact started<br>
+No file found<br>
+Viber [Viber] artifact completed<br>
+<br>
+userDict [userDict] artifact started<br>
+No file found<br>
+userDict [userDict] artifact completed<br>
+<br>
+twitter [Twitter] artifact started<br>
+No file found<br>
+twitter [Twitter] artifact completed<br>
+<br>
+Zapya [Zapya] artifact started<br>
+No file found<br>
+Zapya [Zapya] artifact completed<br>
+<br>
+FCM_Outlook [FCMQueuedMessageOutlook] artifact started<br>
+No file found<br>
+FCM_Outlook [FCMQueuedMessageOutlook] artifact completed<br>
+<br>
+FilesByGoogle [FilesByGoogle] artifact started<br>
+No file found<br>
+FilesByGoogle [FilesByGoogle] artifact completed<br>
+<br>
+Call logs  [calllog] artifact started<br>
+No file found<br>
+Call logs  [calllog] artifact completed<br>
+<br>
+cmh [cmh] artifact started<br>
+No file found<br>
+cmh [cmh] artifact completed<br>
+<br>
+MapWalkActivities [MMWActivities] artifact started<br>
+No file found<br>
+MapWalkActivities [MMWActivities] artifact completed<br>
+<br>
+App Locker DB [appLockerfishingnetdb] artifact started<br>
+No file found<br>
+App Locker DB [appLockerfishingnetdb] artifact completed<br>
+<br>
+slopes [slopes] artifact started<br>
+No file found<br>
+slopes [slopes] artifact completed<br>
+<br>
+wellbeing [wellbeing] artifact started<br>
+No file found<br>
+wellbeing [wellbeing] artifact completed<br>
+<br>
+ChromeCookies [chromeCookies] artifact started<br>
+No file found<br>
+ChromeCookies [chromeCookies] artifact completed<br>
+<br>
+PumaUsers [PumaUsers] artifact started<br>
+No file found<br>
+PumaUsers [PumaUsers] artifact completed<br>
+<br>
+chatgpt [chatgpt] artifact started<br>
+No file found<br>
+chatgpt [chatgpt] artifact completed<br>
+<br>
+mega_transfers [mega_transfers] artifact started<br>
+No file found<br>
+mega_transfers [mega_transfers] artifact completed<br>
+<br>
+appopSetupWiz [appopSetupWiz] artifact started<br>
+No file found<br>
+appopSetupWiz [appopSetupWiz] artifact completed<br>
+<br>
+skout [skout] artifact started<br>
+No file found<br>
+skout [skout] artifact completed<br>
+<br>
+App Locker Pat [appLockerfishingnetpat] artifact started<br>
+No file found<br>
+App Locker Pat [appLockerfishingnetpat] artifact completed<br>
+<br>
+RunkeeperUser [RunkeeperUser] artifact started<br>
+No file found<br>
+RunkeeperUser [RunkeeperUser] artifact completed<br>
+<br>
+permissions [permissions] artifact started<br>
+No file found<br>
+permissions [permissions] artifact completed<br>
+<br>
+GooglemapaudioT [googlemapaudioTemp] artifact started<br>
+No file found<br>
+GooglemapaudioT [googlemapaudioTemp] artifact completed<br>
+<br>
+get_linkedin_account [LinkedIn] artifact started<br>
+No file found<br>
+get_linkedin_account [LinkedIn] artifact completed<br>
+<br>
+get_linkedin_messages [LinkedIn] artifact started<br>
+No file found<br>
+get_linkedin_messages [LinkedIn] artifact completed<br>
+<br>
+tikTok [tikTok] artifact started<br>
+No file found<br>
+tikTok [tikTok] artifact completed<br>
+<br>
+FCM_Jungrammer [FCMQueuedMessagesJungrammer] artifact started<br>
+No file found<br>
+FCM_Jungrammer [FCMQueuedMessagesJungrammer] artifact completed<br>
+<br>
+One Drive [OneDrive_Metadata] artifact started<br>
+No file found<br>
+One Drive [OneDrive_Metadata] artifact completed<br>
+<br>
+mega [mega] artifact started<br>
+No file found<br>
+mega [mega] artifact completed<br>
+<br>
+sChats [sChats] artifact started<br>
+No file found<br>
+sChats [sChats] artifact completed<br>
+<br>
+SimpleStorage_applaunch [SimpleStorage_applaunch] artifact started<br>
+No file found<br>
+SimpleStorage_applaunch [SimpleStorage_applaunch] artifact completed<br>
+<br>
+GarminStressAPI [GarminStressAPI] artifact started<br>
+No file found<br>
+GarminStressAPI [GarminStressAPI] artifact completed<br>
+<br>
+packageGplinks [packageGplinks] artifact started<br>
+No file found<br>
+packageGplinks [packageGplinks] artifact completed<br>
+<br>
+Chrome [chrome] artifact started<br>
+No file found<br>
+Chrome [chrome] artifact completed<br>
+<br>
+GarminWeight [GarminWeight] artifact started<br>
+No file found<br>
+GarminWeight [GarminWeight] artifact completed<br>
+<br>
+Samsung Honeyboard Clipboard Historty [SamsungHoneyboard] artifact started<br>
+No file found<br>
+Samsung Honeyboard Clipboard Historty [SamsungHoneyboard] artifact completed<br>
+<br>
+Samsung Honeyboard Clipboard Screenshot [SamsungHoneyboard] artifact started<br>
+No file found<br>
+Samsung Honeyboard Clipboard Screenshot [SamsungHoneyboard] artifact completed<br>
+<br>
+GoogleTasks [googleTasks] artifact started<br>
+No file found<br>
+GoogleTasks [googleTasks] artifact completed<br>
+<br>
+Gallery Trash [galleryTrash] artifact started<br>
+No file found<br>
+Gallery Trash [galleryTrash] artifact completed<br>
+<br>
+Cello [Cello] artifact started<br>
+No file found<br>
+Cello [Cello] artifact completed<br>
+<br>
+waze [waze] artifact started<br>
+No file found<br>
+waze [waze] artifact completed<br>
+<br>
+smyfilesStored [smyfilesStored] artifact started<br>
+No file found<br>
+smyfilesStored [smyfilesStored] artifact completed<br>
+<br>
+smyfilescache [smyfilescache] artifact started<br>
+No file found<br>
+smyfilescache [smyfilescache] artifact completed<br>
+<br>
+sharedProto [sharedProto] artifact started<br>
+No file found<br>
+sharedProto [sharedProto] artifact completed<br>
+<br>
+ChromeTopSites [chromeTopSites] artifact started<br>
+No file found<br>
+ChromeTopSites [chromeTopSites] artifact completed<br>
+<br>
+Strava [StravaGPS] artifact started<br>
+No file found<br>
+Strava [StravaGPS] artifact completed<br>
+<br>
+InstalledappsVending [installedappsVending] artifact started<br>
+No file found<br>
+InstalledappsVending [installedappsVending] artifact completed<br>
+<br>
+kijijiConversations [kijijiConversations] artifact started<br>
+No file found<br>
+kijijiConversations [kijijiConversations] artifact completed<br>
+<br>
+ClipBoard [clipBoard] artifact started<br>
+No file found<br>
+ClipBoard [clipBoard] artifact completed<br>
+<br>
+last_boot_time [last_boot_time] artifact started<br>
+No file found<br>
+last_boot_time [last_boot_time] artifact completed<br>
+<br>
+ChessComAcct [ChessComAccount] artifact started<br>
+No file found<br>
+ChessComAcct [ChessComAccount] artifact completed<br>
+<br>
+BadooConnections [BadooConnections] artifact started<br>
+No file found<br>
+BadooConnections [BadooConnections] artifact completed<br>
+<br>
+skype [skype] artifact started<br>
+No file found<br>
+skype [skype] artifact completed<br>
+<br>
+chatgpt2 [chatgpt2] artifact started<br>
+No file found<br>
+chatgpt2 [chatgpt2] artifact completed<br>
+<br>
+Bluetooth Connections [bluetoothConnections] artifact started<br>
+No file found<br>
+Bluetooth Connections [bluetoothConnections] artifact completed<br>
+<br>
+samsungSmartThings [samsungSmartThings] artifact started<br>
+No file found<br>
+samsungSmartThings [samsungSmartThings] artifact completed<br>
+<br>
+GarminDailiesAPI [GarminDailiesAPI] artifact started<br>
+No file found<br>
+GarminDailiesAPI [GarminDailiesAPI] artifact completed<br>
+<br>
+Tusky [tusky] artifact started<br>
+No file found<br>
+Tusky [tusky] artifact completed<br>
+<br>
+HideX [HideX] artifact started<br>
+No file found<br>
+HideX [HideX] artifact completed<br>
+<br>
+FirefoxDownloads [firefoxDownloads] artifact started<br>
+No file found<br>
+FirefoxDownloads [firefoxDownloads] artifact completed<br>
+<br>
+usagestats [usagestats] artifact started<br>
+No file found<br>
+usagestats [usagestats] artifact completed<br>
+<br>
+Cash App [cashApp] artifact started<br>
+No file found<br>
+Cash App [cashApp] artifact completed<br>
+<br>
+MapUsers [MMWUsers] artifact started<br>
+No file found<br>
+MapUsers [MMWUsers] artifact completed<br>
+<br>
+pages [offlinePages] artifact started<br>
+No file found<br>
+pages [offlinePages] artifact completed<br>
+<br>
+Turbo_AppUsage [Turbo_AppUsage] artifact started<br>
+No file found<br>
+Turbo_AppUsage [Turbo_AppUsage] artifact completed<br>
+<br>
+smyfilesOpHistory [smyfilesOpHistory] artifact started<br>
+No file found<br>
+smyfilesOpHistory [smyfilesOpHistory] artifact completed<br>
+<br>
+NQVault [NQ_Vault] artifact started<br>
+No file found<br>
+NQVault [NQ_Vault] artifact completed<br>
+<br>
+vaulty_files [vaulty_files] artifact started<br>
+No file found<br>
+vaulty_files [vaulty_files] artifact completed<br>
+<br>
+wellbeingaccount [wellbeingaccount] artifact started<br>
+No file found<br>
+wellbeingaccount [wellbeingaccount] artifact completed<br>
+<br>
+DocList' [DocList] artifact started<br>
+No file found<br>
+DocList' [DocList] artifact completed<br>
+<br>
+duckduckgo_bookmarks [DuckDuckGo] artifact started<br>
+No file found<br>
+duckduckgo_bookmarks [DuckDuckGo] artifact completed<br>
+<br>
+duckduckgo_favorites [DuckDuckGo] artifact started<br>
+No file found<br>
+duckduckgo_favorites [DuckDuckGo] artifact completed<br>
+<br>
+duckduckgo_history [DuckDuckGo] artifact started<br>
+No file found<br>
+duckduckgo_history [DuckDuckGo] artifact completed<br>
+<br>
+duckduckgo_opentabs [DuckDuckGo] artifact started<br>
+No file found<br>
+duckduckgo_opentabs [DuckDuckGo] artifact completed<br>
+<br>
+duckduckgo_thumbnails [DuckDuckGo] artifact started<br>
+No file found<br>
+duckduckgo_thumbnails [DuckDuckGo] artifact completed<br>
+<br>
+InstalledappsLibrary [installedappsLibrary] artifact started<br>
+No file found<br>
+InstalledappsLibrary [installedappsLibrary] artifact completed<br>
+<br>
+GarminSync [GarminSync] artifact started<br>
+No file found<br>
+GarminSync [GarminSync] artifact completed<br>
+<br>
+knuddels_chats [knuddels] artifact started<br>
+No file found<br>
+knuddels_chats [knuddels] artifact completed<br>
+<br>
+textnow [textnow] artifact started<br>
+No file found<br>
+textnow [textnow] artifact completed<br>
+<br>
+GarminSleepAPI [GarminSleepAPI] artifact started<br>
+No file found<br>
+GarminSleepAPI [GarminSleepAPI] artifact completed<br>
+<br>
+googleLastTrip [googleLastTrip] artifact started<br>
+No file found<br>
+googleLastTrip [googleLastTrip] artifact completed<br>
+<br>
+NikeActivityMoments [NikeAMoments] artifact started<br>
+No file found<br>
+NikeActivityMoments [NikeAMoments] artifact completed<br>
+<br>
+rarlabPreferences [rarlabPreferences] artifact started<br>
+No file found<br>
+rarlabPreferences [rarlabPreferences] artifact completed<br>
+<br>
+powerOffReset [powerOffReset] artifact started<br>
+No file found<br>
+powerOffReset [powerOffReset] artifact completed<br>
+<br>
+setupWizardinfo [setupWizardinfo] artifact started<br>
+No file found<br>
+setupWizardinfo [setupWizardinfo] artifact completed<br>
+<br>
+Quicksearch [googleQuickSearchbox] artifact started<br>
+No file found<br>
+Quicksearch [googleQuickSearchbox] artifact completed<br>
+<br>
+GarminPolyAPI [GarminPolyAPI] artifact started<br>
+No file found<br>
+GarminPolyAPI [GarminPolyAPI] artifact completed<br>
+<br>
+appIcons [appicons] artifact started<br>
+No file found<br>
+appIcons [appicons] artifact completed<br>
+<br>
+blueskyposts [blueskyposts] artifact started<br>
+No file found<br>
+blueskyposts [blueskyposts] artifact completed<br>
+<br>
+smyfilesRecents [smyfilesRecents] artifact started<br>
+No file found<br>
+smyfilesRecents [smyfilesRecents] artifact completed<br>
+<br>
+blueskymessages [blueskymessages] artifact started<br>
+No file found<br>
+blueskymessages [blueskymessages] artifact completed<br>
+<br>
+smyFiles2 [smyFiles2] artifact started<br>
+No file found<br>
+smyFiles2 [smyFiles2] artifact completed<br>
+<br>
+bittorrentDlhist [bittorrentDlhist] artifact started<br>
+No file found<br>
+bittorrentDlhist [bittorrentDlhist] artifact completed<br>
+<br>
+HealthMateAccounts [WithingsHealthMate] artifact started<br>
+No file found<br>
+HealthMateAccounts [WithingsHealthMate] artifact completed<br>
+<br>
+HealthMateTrackings [WithingsHealthMate] artifact started<br>
+No file found<br>
+HealthMateTrackings [WithingsHealthMate] artifact completed<br>
+<br>
+HealthMateLocations [WithingsHealthMate] artifact started<br>
+No file found<br>
+HealthMateLocations [WithingsHealthMate] artifact completed<br>
+<br>
+HealthMateMessages [WithingsHealthMate] artifact started<br>
+No file found<br>
+HealthMateMessages [WithingsHealthMate] artifact completed<br>
+<br>
+HealthMateContacts [WithingsHealthMate] artifact started<br>
+No file found<br>
+HealthMateContacts [WithingsHealthMate] artifact completed<br>
+<br>
+HealthMateMeasurements [WithingsHealthMate] artifact started<br>
+No file found<br>
+HealthMateMeasurements [WithingsHealthMate] artifact completed<br>
+<br>
+HealthMateDevices [WithingsHealthMate] artifact started<br>
+No file found<br>
+HealthMateDevices [WithingsHealthMate] artifact completed<br>
+<br>
+torThumbs [torThumbs] artifact started<br>
+No file found<br>
+torThumbs [torThumbs] artifact completed<br>
+<br>
+Wire User Profile [wireMessenger] artifact started<br>
+No file found<br>
+Wire User Profile [wireMessenger] artifact completed<br>
+<br>
+Wire Contacts [wireMessenger] artifact started<br>
+No file found<br>
+Wire Contacts [wireMessenger] artifact completed<br>
+<br>
+Wire Messages [wireMessenger] artifact started<br>
+No file found<br>
+Wire Messages [wireMessenger] artifact completed<br>
+<br>
+AdidasActivities [AdidasActivities] artifact started<br>
+No file found<br>
+AdidasActivities [AdidasActivities] artifact completed<br>
+<br>
+BitTorrent Prefs [bittorrentClientpref] artifact started<br>
+No file found<br>
+BitTorrent Prefs [bittorrentClientpref] artifact completed<br>
+<br>
+FirefoxTopSites [firefoxTopSites] artifact started<br>
+No file found<br>
+FirefoxTopSites [firefoxTopSites] artifact completed<br>
+<br>
+Googlemaplocation [googlemaplocation] artifact started<br>
+No file found<br>
+Googlemaplocation [googlemaplocation] artifact completed<br>
+<br>
+GarminHRAPI [GarminHRAPI] artifact started<br>
+No file found<br>
+GarminHRAPI [GarminHRAPI] artifact completed<br>
+<br>
+GarminUser [GarminUser] artifact started<br>
+No file found<br>
+GarminUser [GarminUser] artifact completed<br>
+<br>
+installedappsGass [installedappsGass] artifact started<br>
+No file found<br>
+installedappsGass [installedappsGass] artifact completed<br>
+<br>
+samsungWeatherClock [samsungWeatherClock] artifact started<br>
+No file found<br>
+samsungWeatherClock [samsungWeatherClock] artifact completed<br>
+<br>
+appSemloc [appSemloc] artifact started<br>
+No file found<br>
+appSemloc [appSemloc] artifact completed<br>
+<br>
+NikePolyline [NikePolyline] artifact started<br>
+No file found<br>
+NikePolyline [NikePolyline] artifact completed<br>
+<br>
+GarminActivities [GarminActivities] artifact started<br>
+No file found<br>
+GarminActivities [GarminActivities] artifact completed<br>
+<br>
+mewe [mewe] artifact started<br>
+No file found<br>
+mewe [mewe] artifact completed<br>
+<br>
+MeetMe [meetme] artifact started<br>
+No file found<br>
+MeetMe [meetme] artifact completed<br>
+<br>
+lgRCS [lgRCS] artifact started<br>
+No file found<br>
+lgRCS [lgRCS] artifact completed<br>
+<br>
+VerizonRDD-WIFI [VerizonRDDWIFI] artifact started<br>
+No file found<br>
+VerizonRDD-WIFI [VerizonRDDWIFI] artifact completed<br>
+<br>
+AVG [AVG] artifact started<br>
+No file found<br>
+AVG [AVG] artifact completed<br>
+<br>
+burnerMessages [burnerMessages] artifact started<br>
+No file found<br>
+burnerMessages [burnerMessages] artifact completed<br>
+<br>
+Life360 [Life360] artifact started<br>
+No file found<br>
+Life360 [Life360] artifact completed<br>
+<br>
+kijijiRecentSearches [kijijiRecentSearches] artifact started<br>
+No file found<br>
+kijijiRecentSearches [kijijiRecentSearches] artifact completed<br>
+<br>
+Processes completed.<br>
+Processing time = 00:00:00<br>
+Processing time (wall)= 00:00:00<br>
+<br>
+Report generation started.<br>
+</div>
+        <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="profile-tab"><br />Extraction/Path selected: uploads/814b9da1b909c1e8e250eeb6cd5e1b76<br><br><b>For usagestatsVersion module</b><ul><li>No file found for regex <i>*/system/usagestats/*/version</i></li></ul><ul><li>No file found for regex <i>*/system_ce/*/usagestats/version</i></li></ul><b>For package_info module</b><ul><li>No file found for regex <i>*/system/packages.xml</i></li></ul><b>For GarminJson module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/gcm_cache*</i></li></ul><b>For protonVPN User module</b><ul><li>No file found for regex <i>*/ch.protonvpn.android/databases/db</i></li></ul><ul><li>No file found for regex <i>*/ch.protonvpn.android/shared_prefs/ServerListUpdater.xml</i></li></ul><ul><li>No file found for regex <i>*/ch.protonvpn.android/log/Data.log</i></li></ul><b>For atrackerdetect module</b><ul><li>No file found for regex <i>*/com.apple.trackerdetect/shared_prefs/com.apple.trackerdetect_preferences.xml</i></li></ul><b>For Build module</b><ul><li>No file found for regex <i>*/vendor/build.prop</i></li></ul><b>For PikPak Cloud List module</b><ul><li>No file found for regex <i>*/com.pikcloud.pikpak/databases/pikpak_files_*.db*</i></li></ul><b>For GoogleFitGMS module</b><ul><li>No file found for regex <i>*/com.google.android.gms/databases/fitness.db.*</i></li></ul><b>For sms_mms module</b><ul><li>No file found for regex <i>*/com.android.providers.telephony/databases/mmssms*</i></li></ul><b>For FCM_Skype module</b><ul><li>No file found for regex <i>*/fcm_queued_messages.ldb/*</i></li></ul><b>For FCM_Teams module</b><ul><li>No file found for regex <i>*/fcm_queued_messages.ldb/*</i></li></ul><b>For googleMapsSearches module</b><ul><li>No file found for regex <i>*/com.google.android.apps.maps/files/new_recent_history_cache_search.cs</i></li></ul><b>For Call Logs module</b><ul><li>No file found for regex <i>*/com.android.providers.contacts/databases/contact*</i></li></ul><ul><li>No file found for regex <i>*/com.sec.android.provider.logsprovider/databases/logs.db*</i></li></ul><b>For playgroundVault module</b><ul><li>No file found for regex <i>*/playground.develop.applocker/shared_prefs/crypto.KEY_256.xml</i></li></ul><ul><li>No file found for regex <i>*/applocker/vault/*</i></li></ul><b>For browserCachefirefox module</b><ul><li>No file found for regex <i>*/data/org.mozilla.firefox/cache/*/cache2/entries/**</i></li></ul><b>For ChessComFriends module</b><ul><li>No file found for regex <i>*/com.chess/databases/chess-database*</i></li></ul><b>For siminfo module</b><ul><li>No file found for regex <i>*/user_de/*/com.android.providers.telephony/databases/telephony.db</i></li></ul><b>For App Locker module</b><ul><li>No file found for regex <i>*/.privacy_safe/picture/*</i></li></ul><ul><li>No file found for regex <i>*/.privacy_safe/video/*</i></li></ul><b>For GarminLog module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/files/logs/app.log*</i></li></ul><b>For Imo module</b><ul><li>No file found for regex <i>*/com.imo.android.imous/databases/*.db*</i></li></ul><b>For Bumble module</b><ul><li>No file found for regex <i>*/com.bumble.app/databases/ChatComDatabase*</i></li></ul><ul><li>No file found for regex <i>*/com.bumble.app/files/c2V0dGluZ3M=</i></li></ul><b>For Cast module</b><ul><li>No file found for regex <i>*/com.google.android.gms/databases/cast.db*</i></li></ul><b>For runtimePerms module</b><ul><li>No file found for regex <i>*/system/users/*/runtime-permissions.xml</i></li></ul><ul><li>No file found for regex <i>*/misc_de/*/apexdata/com.android.permission/runtime-permissions.xml</i></li></ul><b>For Bash History module</b><ul><li>No file found for regex <i>*/.bash_history</i></li></ul><b>For smanagerCrash module</b><ul><li>No file found for regex <i>*/com.samsung.android.sm/databases/sm.db</i></li></ul><b>For GarminDailies module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For PikPak Play module</b><ul><li>No file found for regex <i>*/com.pikcloud.pikpak/databases/greendao.db*</i></li></ul><b>For VLC module</b><ul><li>No file found for regex <i>*vlc_media.db*</i></li></ul><b>For Libretorrent module</b><ul><li>No file found for regex <i>*/data/com.houseoflife.bitlord/databases/libretorrent.db*</i></li></ul><ul><li>No file found for regex <i>*/libretorrent.db*</i></li></ul><b>For airtagAlerts module</b><ul><li>No file found for regex <i>*/com.google.android.gms/databases/personalsafety_db*</i></li></ul><b>For airtagScans module</b><ul><li>No file found for regex <i>*/com.google.android.gms/databases/personalsafety_db*</i></li></ul><b>For airtagLastScan module</b><ul><li>No file found for regex <i>*/files/personalsafety/shared/personalsafety_info.pb</i></li></ul><b>For airtagPassiveScan module</b><ul><li>No file found for regex <i>*/files/personalsafety/shared/personalsafety_optin.pb</i></li></ul><b>For torrentinfo module</b><ul><li>No file found for regex <i>*/*.torrent</i></li></ul><b>For GroupMe module</b><ul><li>No file found for regex <i>*/com.groupme.android/databases/groupme.db</i></li></ul><b>For Google Maps GMM module</b><ul><li>No file found for regex <i>*/com.google.android.apps.maps/databases/gmm_myplaces.db</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.maps/databases/gmm_storage.db</i></li></ul><b>For Life360DriverBehavior module</b><ul><li>No file found for regex <i>*/trips/*.json</i></li></ul><b>For blueskysearches module</b><ul><li>No file found for regex <i>*/xyz.blueskyweb.app/databases/RKStorage*</i></li></ul><b>For battery_usage_v4 module</b><ul><li>No file found for regex <i>*/com.google.android.settings.intelligence/databases/battery-usage-db-v4*</i></li></ul><b>For suggestions module</b><ul><li>No file found for regex <i>*/com.google.android.settings.intelligence/shared_prefs/suggestions.xml</i></li></ul><b>For pkgPredictions module</b><ul><li>No file found for regex <i>*/system/PkgPredictions.db*</i></li></ul><b>For AdidasUser module</b><ul><li>No file found for regex <i>*com.runtastic.android/databases/user.db*</i></li></ul><b>For BadooChat module</b><ul><li>No file found for regex <i>*com.badoo.mobile/databases/ChatComDatabase*</i></li></ul><b>For Contacts module</b><ul><li>No file found for regex <i>*/com.android.providers.contacts/databases/contact*</i></li></ul><ul><li>No file found for regex <i>*/com.sec.android.provider.logsprovider/databases/logs.db*</i></li></ul><ul><li>No file found for regex <i>*/com.samsung.android.providers.contacts/databases/contact*</i></li></ul><b>For AirGuard module</b><ul><li>No file found for regex <i>*/de.seemoo.at_tracking_detection.release/databases/attd_db*</i></li></ul><b>For smyfilesTrash module</b><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/files/trash/*</i></li></ul><ul><li>No file found for regex <i>*/.Trash/com.sec.android.app.myfiles/*</i></li></ul><b>For wifiConfigstore2 module</b><ul><li>No file found for regex <i>*/misc/wifi/WifiConfigStore.xml</i></li></ul><ul><li>No file found for regex <i>*/misc**/apexdata/com.android.wifi/WifiConfigStore.xml</i></li></ul><b>For K9MailData module</b><ul><li>No file found for regex <i>*/com.fsck.k9/databases/*</i></li></ul><b>For EmulatedSmeta module</b><ul><li>No file found for regex <i>*/com.google.android.providers.media.module/databases/external.db*</i></li></ul><ul><li>No file found for regex <i>*/com.android.providers.media/databases/external.db*</i></li></ul><b>For Firefox module</b><ul><li>No file found for regex <i>*/org.mozilla.firefox/files/places.sqlite*</i></li></ul><b>For GoogleNowPlaying module</b><ul><li>No file found for regex <i>*/com.google.intelligence.sense/db/history_db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.as/databases/history_db*</i></li></ul><b>For FairEmailAccounts module</b><ul><li>No file found for regex <i>*/eu.faircode.email/databases/fairemail*</i></li></ul><b>For FairEmailContacts module</b><ul><li>No file found for regex <i>*/eu.faircode.email/databases/fairemail*</i></li></ul><b>For Googlemapaudio module</b><ul><li>No file found for regex <i>*/com.google.android.apps.maps/app_tts-cache/*_*</i></li></ul><b>For Podcast Addict module</b><ul><li>No file found for regex <i>*/com.bambuna.podcastaddict/databases/podcastAddict.db</i></li></ul><b>For PikPak Downloads module</b><ul><li>No file found for regex <i>*/com.pikcloud.pikpak/databases/pikpak_downloads.db*</i></li></ul><b>For WhatsApp module</b><ul><li>No file found for regex <i>*com.whatsapp*</i></li></ul><ul><li>No file found for regex <i>*/com.whatsapp/databases/*.db*</i></li></ul><ul><li>No file found for regex <i>*/com.whatsapp/shared_prefs/com.whatsapp_preferences_light.xml</i></li></ul><ul><li>No file found for regex <i>*/com.whatsapp/shared_prefs/startup_prefs.xml</i></li></ul><ul><li>No file found for regex <i>*/com.whatsapp/shared_prefs/reg_prefs.xml</i></li></ul><ul><li>No file found for regex <i>*/WhatsApp Images/*.*</i></li></ul><ul><li>No file found for regex <i>*/WhatsApp Video/*.*</i></li></ul><b>For recentactivity module</b><ul><li>No file found for regex <i>*/system_ce/*</i></li></ul><b>For GarminNotifications module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/notification-database*</i></li></ul><b>For walStrings module</b><ul><li>No file found for regex <i>*/*-wal</i></li></ul><ul><li>No file found for regex <i>*/*-journal</i></li></ul><b>For burnerSubscription module</b><ul><li>No file found for regex <i>*/data/data/com.adhoclabs.burner/databases/burnerDatabase.db*</i></li></ul><b>For TorrentData module</b><ul><li>No file found for regex <i>*/*.torrent</i></li></ul><b>For Etc_hosts module</b><ul><li>No file found for regex <i>*/system/etc/hosts</i></li></ul><b>For PumaActivities module</b><ul><li>No file found for regex <i>*com.pumapumatrac/databases/pumatrac-db*</i></li></ul><b>For Fitbit module</b><ul><li>No file found for regex <i>*/com.fitbit.FitbitMobile/databases/activity_db*</i></li></ul><ul><li>No file found for regex <i>*/com.fitbit.FitbitMobile/databases/device_database*</i></li></ul><ul><li>No file found for regex <i>*/com.fitbit.FitbitMobile/databases/exercise_db*</i></li></ul><ul><li>No file found for regex <i>*/com.fitbit.FitbitMobile/databases/heart_rate_db*</i></li></ul><ul><li>No file found for regex <i>*/com.fitbit.FitbitMobile/databases/sleep*</i></li></ul><ul><li>No file found for regex <i>*/com.fitbit.FitbitMobile/databases/social_db*</i></li></ul><ul><li>No file found for regex <i>*/com.fitbit.FitbitMobile/databases/mobile_track_db*</i></li></ul><b>For appops module</b><ul><li>No file found for regex <i>*/system/appops.xml</i></li></ul><b>For wifiProfiles module</b><ul><li>No file found for regex <i>*/misc/wifi/WifiConfigStore.xml</i></li></ul><ul><li>No file found for regex <i>*/misc**/apexdata/com.android.wifi/WifiConfigStore.xml</i></li></ul><b>For ChessComMessages module</b><ul><li>No file found for regex <i>*/com.chess/databases/chess-database*</i></li></ul><b>For ChromeNetworkActionPredictor module</b><ul><li>No file found for regex <i>*/app_Chrome/Default/Network Action Predictor*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/Network Action Predictor*</i></li></ul><ul><li>No file found for regex <i>*/app_opera/Network Action Predicator*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/Network Action Predictor*</i></li></ul><b>For roles module</b><ul><li>No file found for regex <i>*/system/users/*/roles.xml</i></li></ul><ul><li>No file found for regex <i>*/misc_de/*/apexdata/com.android.permission/roles.xml</i></li></ul><b>For FirefoxPermissions module</b><ul><li>No file found for regex <i>*/org.mozilla.firefox/files/mozilla/*.default/permissions.sqlite*</i></li></ul><b>For VerizonRDD-Battery module</b><ul><li>No file found for regex <i>*/com.verizon.mips.services/databases/RDD_ANALYTICS_DATABASE</i></li></ul><b>For FirefoxCookies module</b><ul><li>No file found for regex <i>*/org.mozilla.firefox/files/mozilla/*.default/cookies.sqlite*</i></li></ul><b>For oldpowerOffReset module</b><ul><li>No file found for regex <i>*/log/power_off_reset_reason.txt</i></li></ul><ul><li>No file found for regex <i>*/log/power_off_reset_reason_backup.txt</i></li></ul><b>For smanagerLow module</b><ul><li>No file found for regex <i>*/com.samsung.android.sm/databases/lowpowercontext-system-db</i></li></ul><b>For Cache Location module</b><ul><li>No file found for regex <i>*/com.google.android.location/files/cache.cell/cache.cell</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.location/files/cache.wifi/cache.wifi</i></li></ul><b>For GarminPresistent module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/files/PersistedInstallation*</i></li></ul><b>For persistentProp module</b><ul><li>No file found for regex <i>*/property/persistent_properties</i></li></ul><b>For VLC Thumbs ADB module</b><ul><li>No file found for regex <i>*/org.videolan.vlc/ef/medialib/*.*</i></li></ul><ul><li>No file found for regex <i>*/org.videolan.vlc/ef/medialib/thumbnails/*.*</i></li></ul><b>For ChessComGames module</b><ul><li>No file found for regex <i>*/com.chess/databases/chess-database*</i></li></ul><ul><li>No file found for regex <i>*/data/data/com.chess/shared_prefs/com.chess.app.session_preferences.xml</i></li></ul><b>For adb_hosts module</b><ul><li>No file found for regex <i>*/misc/adb/adb_keys</i></li></ul><b>For GooglePlaySearches module</b><ul><li>No file found for regex <i>*/com.android.vending/databases/suggestions.db*</i></li></ul><b>For smyFiles module</b><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/databases/MyFiles*.db*</i></li></ul><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/databases/myfiles.db*</i></li></ul><b>For mastodon module</b><ul><li>No file found for regex <i>*/org.joinmastodon.android/databases/*.db*</i></li></ul><ul><li>No file found for regex <i>*/org.joinmastodon.android/files/*.json</i></li></ul><b>For hikvision module</b><ul><li>No file found for regex <i>*/com.connect.enduser/databases/database.hik*</i></li></ul><ul><li>No file found for regex <i>*/com.connect.enduser/databases/ezvizlog.db</i></li></ul><ul><li>No file found for regex <i>*/com.connect.enduser/databases/image.db*</i></li></ul><ul><li>No file found for regex <i>*/0/Pictures/Hik-Connect Album/*</i></li></ul><b>For ChromeBookmarks module</b><ul><li>No file found for regex <i>*/app_chrome/Default/Bookmarks*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/Bookmarks*</i></li></ul><ul><li>No file found for regex <i>*/app_opera/Bookmarks*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/Bookmarks*</i></li></ul><b>For shutdown_checkpoints module</b><ul><li>No file found for regex <i>*/system/shutdown-checkpoints/checkpoints-*</i></li></ul><b>For GoogleMessages module</b><ul><li>No file found for regex <i>*/com.google.android.apps.messaging/databases/bugle_db*</i></li></ul><b>For NikeNotifications module</b><ul><li>No file found for regex <i>*/com.nike.plusgps/databases/ns_inbox.db*</i></li></ul><b>For Usagehistory module</b><ul><li>No file found for regex <i>*/usage-history.xml</i></li></ul><b>For protonmail module</b><ul><li>No file found for regex <i>*/ch.protonmail.android/databases/*-MessagesDatabase.db*</i></li></ul><ul><li>No file found for regex <i>*/ch.protonmail.android/databases/*-ContactsDatabase.db*</i></li></ul><b>For keepNotes module</b><ul><li>No file found for regex <i>*/data/data/com.google.android.keep/databases/keep.db*</i></li></ul><b>For GarminCharts module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For FCM_Dump module</b><ul><li>No file found for regex <i>*/fcm_queued_messages.ldb/*</i></li></ul><b>For scontextLog module</b><ul><li>No file found for regex <i>*/com.samsung.android.providers.context/databases/ContextLog.db</i></li></ul><b>For discordChats module</b><ul><li>No file found for regex <i>*/data/com.discord/files/kv-storage/*/a*</i></li></ul><b>For LibretorrentFR module</b><ul><li>No file found for regex <i>*/data/com.houseoflife.bitlord/databases/libretorrent.db*</i></li></ul><ul><li>No file found for regex <i>*/libretorrent.db*</i></li></ul><b>For FacebookMessenger module</b><ul><li>No file found for regex <i>*/*threads_db2*</i></li></ul><ul><li>No file found for regex <i>*/msys_database*</i></li></ul><b>For smembersEvents module</b><ul><li>No file found for regex <i>*/com.samsung.oh/databases/com_pocketgeek_sdk.db</i></li></ul><b>For line module</b><ul><li>No file found for regex <i>*/jp.naver.line.android/databases/**</i></li></ul><b>For shareit module</b><ul><li>No file found for regex <i>*/com.lenovo.anyshare.gps/databases/history.db*</i></li></ul><b>For GarminPolyline module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For GarminGcmJsonActivities module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/gcm_cache.db*</i></li></ul><b>For Android Notification History module</b><ul><li>No file found for regex <i>**/system_ce/*/notification_history/history/*</i></li></ul><ul><li>No file found for regex <i>**/system/users/*/settings_secure.xml</i></li></ul><ul><li>No file found for regex <i>**/system/notification_policy.xml</i></li></ul><b>For GboardCache module</b><ul><li>No file found for regex <i>*/com.google.android.inputmethod.latin/databases/trainingcache*.db</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.inputmethod.latin/databases/gboard_clipboard.db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.inputmethod.latin/files/clipboard_image/*</i></li></ul><b>For NikeActivities module</b><ul><li>No file found for regex <i>*/com.nike.plusgps/databases/com.nike.nrc.room*</i></li></ul><b>For ChromeDIPS module</b><ul><li>No file found for regex <i>*/app_chrome/Default/DIPS*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/DIPS*</i></li></ul><ul><li>No file found for regex <i>*/app_opera/DIPS*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/DIPS*</i></li></ul><b>For accounts_ce module</b><ul><li>No file found for regex <i>*/system_ce/*/accounts_ce.db*</i></li></ul><b>For accounts_ce_authtokens module</b><ul><li>No file found for regex <i>*/system_ce/*/accounts_ce.db*</i></li></ul><b>For sWipehist module</b><ul><li>No file found for regex <i>*/efs/recovery/history</i></li></ul><ul><li>No file found for regex <i>*/data/log/recovery_history.log</i></li></ul><b>For browserCachechrome module</b><ul><li>No file found for regex <i>*/data/com.android.chrome/cache/Cache/*_0</i></li></ul><b>For teams module</b><ul><li>No file found for regex <i>*/com.microsoft.teams/databases/SkypeTeams.db*</i></li></ul><b>For GoogleChat module</b><ul><li>No file found for regex <i>*/com.google.android.gm/databases/user_accounts/*/dynamite.db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.dynamite/databases/dynamite.db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.dynamite/databases/user_accounts/*/dynamite.db*</i></li></ul><b>For wifiHotspot module</b><ul><li>No file found for regex <i>*/misc/wifi/softap.conf</i></li></ul><ul><li>No file found for regex <i>*/misc**/apexdata/com.android.wifi/WifiConfigStoreSoftAp.xml</i></li></ul><b>For torrentResumeinfo module</b><ul><li>No file found for regex <i>*/*.resume</i></li></ul><b>For Quicksearch_recent module</b><ul><li>No file found for regex <i>*/com.google.android.googlequicksearchbox/files/recently/*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.googlequicksearchbox/files/accounts/*/RecentsDataStore.pb</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.googlequicksearchbox/databases/accounts.notifications.db</i></li></ul><b>For ImagemngCache module</b><ul><li>No file found for regex <i>*/cache/image_manager_disk_cache/*.*</i></li></ul><ul><li>No file found for regex <i>*/*.cnt</i></li></ul><b>For GarminFacebook USES INTERNET module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/shared_prefs/com.facebook*</i></li></ul><b>For get_kleinanzeigenaccount module</b><ul><li>No file found for regex <i>*/com.ebay.kleinanzeigen/shared_prefs/com.ebay.kleinanzeigen_preferences.xml</i></li></ul><b>For get_kleinanzeigenrecentsearchescache module</b><ul><li>No file found for regex <i>*/com.ebay.kleinanzeigen/files/RECENT_SEARCHES_CACHE</i></li></ul><b>For get_kleinanzeigennonresettablerecentsearchescache module</b><ul><li>No file found for regex <i>*/com.ebay.kleinanzeigen/files/NON_RESETTABLE_RECENT_SEARCHES_CACHE</i></li></ul><b>For get_kleinanzeigenmessagebox module</b><ul><li>No file found for regex <i>*com.ebay.kleinanzeigen/databases/messageBoxDatabase.db*</i></li></ul><b>For tangomessage module</b><ul><li>No file found for regex <i>*/com.sgiggle.production/files/tc.db*</i></li></ul><b>For GarminStepsAPI module</b><ul><li>No file found for regex <i>*/garmin.api/steps*</i></li></ul><b>For burnerContacts module</b><ul><li>No file found for regex <i>*/data/data/com.adhoclabs.burner/databases/burnerDatabase.db*</i></li></ul><b>For FCM_Instagram module</b><ul><li>No file found for regex <i>*/fcm_queued_messages.ldb/*</i></li></ul><b>For FCM_XBox module</b><ul><li>No file found for regex <i>*/fcm_queued_messages.ldb/*</i></li></ul><b>For ChromeLoginData module</b><ul><li>No file found for regex <i>*/app_chrome/Default/Login Data*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/Login Data*</i></li></ul><ul><li>No file found for regex <i>*/app_opera/Login Data*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/Login Data*</i></li></ul><b>For frosting module</b><ul><li>No file found for regex <i>*/com.android.vending/databases/frosting.db*</i></li></ul><b>For AdidasGoals module</b><ul><li>No file found for regex <i>*/com.runtastic.android/databases/goals*</i></li></ul><b>For settingsSecure module</b><ul><li>No file found for regex <i>*/system/users/*/settings_secure.xml</i></li></ul><b>For Errp module</b><ul><li>No file found for regex <i>*/system/users/service/eRR.p</i></li></ul><b>For Gmail module</b><ul><li>No file found for regex <i>*/data/com.google.android.gm/databases/bigTopDataDB.*</i></li></ul><ul><li>No file found for regex <i>*/data/com.google.android.gm/files/downloads/*/attachments/*/*.*</i></li></ul><ul><li>No file found for regex <i>*/data/com.google.android.gm/databases/downloader.db*</i></li></ul><b>For Calendar module</b><ul><li>No file found for regex <i>*/data/com.google.android.calendar/databases/cal_v2a*</i></li></ul><ul><li>No file found for regex <i>*/com.android.providers.calendar/databases/calendar.db*</i></li></ul><b>For accounts_de module</b><ul><li>No file found for regex <i>*/system_de/*/accounts_de.db*</i></li></ul><b>For vaulty_info module</b><ul><li>No file found for regex <i>*/com.theronrogers.vaultyfree/shared_prefs/com.theronrogers.vaultyfree_preferences.xml</i></li></ul><b>For FirefoxRecentlyClosedTabs module</b><ul><li>No file found for regex <i>*/org.mozilla.firefox/databases/recently_closed_tabs*</i></li></ul><b>For urlUserprefs module</b><ul><li>No file found for regex <i>*/com.google.android.gms/shared_prefs/ULR_USER_PREFS.xml</i></li></ul><b>For Turbo_Battery module</b><ul><li>No file found for regex <i>*/com.google.android.apps.turbo/databases/turbo.db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.turbo/databases/bluetooth.db*</i></li></ul><b>For GarminActAPI module</b><ul><li>No file found for regex <i>*/garmin.api/activities*</i></li></ul><b>For MSAuthenticatorAccounts module</b><ul><li>No file found for regex <i>*/com.azure.authenticator/databases/PhoneFactor*</i></li></ul><b>For googleInitiatedNav module</b><ul><li>No file found for regex <i>*/com.google.android.apps.maps/files/new_recent_history_cache_navigated.cs</i></li></ul><ul><li>No file found for regex <i>*/new_recent_history_cache_navigated.cs</i></li></ul><b>For Garmin module</b><ul><li>No file found for regex <i>*/data/com.garmin.android.apps.connectmobile/databases/gcm_cache.db*</i></li></ul><ul><li>No file found for regex <i>*/data/com.garmin.android.apps.connectmobile/databases/notification-database*</i></li></ul><ul><li>No file found for regex <i>*/data/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For likee_location module</b><ul><li>No file found for regex <i>*/video.like/files/*/*location.kv</i></li></ul><b>For likee_databases module</b><ul><li>No file found for regex <i>*/video.like/databases/*.db</i></li></ul><b>For Oruxmaps module</b><ul><li>No file found for regex <i>**/oruxmaps/tracklogs/oruxmapstracks.db*</i></li></ul><b>For Xender module</b><ul><li>No file found for regex <i>*/cn.xender/databases/trans-history-db*</i></li></ul><b>For Downloads module</b><ul><li>No file found for regex <i>*/data/com.android.providers.downloads/databases/downloads.db*</i></li></ul><b>For swellbeing module</b><ul><li>No file found for regex <i>*/com.samsung.android.forest/databases/dwbCommon.db*</i></li></ul><b>For kijijiLocalUserInfo module</b><ul><li>No file found for regex <i>*/com.ebay.kijiji.ca/shared_prefs/LoginData.xml</i></li></ul><b>For GarminSleep module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For GooglePhotos module</b><ul><li>No file found for regex <i>*/com.google.android.apps.photos/databases/gphotos*.db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.photos/databases/disk_cache*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.photos/cache/glide_cache/*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.photos/databases/local_trash.db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.photos/files/trash_files/*</i></li></ul><b>For ChromeMediaHistory module</b><ul><li>No file found for regex <i>*/app_chrome/Default/Media History*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/Media History*</i></li></ul><ul><li>No file found for regex <i>*/app_opera/Media History*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/Media History*</i></li></ul><b>For GoogleCallScreen module</b><ul><li>No file found for regex <i>*/com.google.android.dialer/databases/callscreen_transcripts*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.dialer/files/callscreenrecordings/*.*</i></li></ul><b>For Factory_reset module</b><ul><li>No file found for regex <i>*/misc/bootstat/factory_reset</i></li></ul><b>For Dahua Technology (DMSS) module</b><ul><li>No file found for regex <i>*/com.mm.android.DMSS/databases/*</i></li></ul><ul><li>No file found for regex <i>*/Android/data/com.mm.android.DMSS/files/Download/snapshot/*</i></li></ul><b>For GarminResponse module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For sRecoveryhist module</b><ul><li>No file found for regex <i>*/efs/recovery/history</i></li></ul><b>For pSettings module</b><ul><li>No file found for regex <i>*/com.google.android.gsf/databases/googlesettings.db*</i></li></ul><b>For RunkeeperActivities module</b><ul><li>No file found for regex <i>*com.fitnesskeeper.runkeeper.pro/databases/RunKeeper.sqlite*</i></li></ul><b>For Browser Location module</b><ul><li>No file found for regex <i>*/com.android.browser/app_geolocation/CachedGeoposition.db</i></li></ul><b>For FirefoxFormHistory module</b><ul><li>No file found for regex <i>*/org.mozilla.firefox/files/mozilla/*.default/formhistory.sqlite*</i></li></ul><b>For usageapps module</b><ul><li>No file found for regex <i>*/com.google.android.as/databases/reflection_gel_events.db*</i></li></ul><b>For WordsWithFriends module</b><ul><li>No file found for regex <i>*/com.zynga.words/db/wf_database.sqlite</i></li></ul><b>For sms_mms_backup module</b><ul><li>No file found for regex <i>*/com.android.providers.telephony/d_f/*_backup</i></li></ul><b>For GarminSPO2 module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For GmailActive module</b><ul><li>No file found for regex <i>*/com.google.android.gm/shared_prefs/Gmail.xml</i></li></ul><b>For FCM_Twitter module</b><ul><li>No file found for regex <i>*/fcm_queued_messages.ldb/*</i></li></ul><b>For snapchat module</b><ul><li>No file found for regex <i>*/com.snapchat.android/databases/*.db</i></li></ul><ul><li>No file found for regex <i>*/com.snapchat.android/shared_prefs/*.xml</i></li></ul><b>For DiscreteNative module</b><ul><li>No file found for regex <i>*/system/appops/discrete/**</i></li></ul><b>For ChromeAutofill module</b><ul><li>No file found for regex <i>*/app_chrome/Default/Web Data*</i></li></ul><ul><li>No file found for regex <i>**/app_sbrowser/Default/Web Data*</i></li></ul><ul><li>No file found for regex <i>*/data/data/*/app_opera/Web Data*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/Web Data*</i></li></ul><b>For GoogleKeepNotes module</b><ul><li>No file found for regex <i>*/com.google.android.keep/databases/keep.db*</i></li></ul><b>For smembersAppInv module</b><ul><li>No file found for regex <i>*/com.samsung.oh/databases/com_pocketgeek_sdk_app_inventory.db</i></li></ul><b>For battery_usage_v9 module</b><ul><li>No file found for regex <i>*/user_de/*/com.android.settings/databases/battery-usage-db-v9</i></li></ul><b>For app_battery_usage_v9 module</b><ul><li>No file found for regex <i>*/user_de/*/com.android.settings/databases/battery-usage-db-v9</i></li></ul><b>For Burner module</b><ul><li>No file found for regex <i>*/com.adhoclabs.burner/databases/burners.db</i></li></ul><b>For VLC Thumbs module</b><ul><li>No file found for regex <i>*/org.videolan.vlc/files/medialib/*.jpg</i></li></ul><ul><li>No file found for regex <i>*/org.videolan.vlc/app_db/vlc_media.db*</i></li></ul><b>For Todoist module</b><ul><li>No file found for regex <i>*/com.todoist/databases/database.db*</i></li></ul><b>For Teleguard module</b><ul><li>No file found for regex <i>*/data/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*</i></li></ul><ul><li>No file found for regex <i>*/data/ch.swisscows.messenger.teleguardapp/cache/**</i></li></ul><b>For ChromeOfflinePages module</b><ul><li>No file found for regex <i>*/app_chrome/Default/Offline Pages/metadata/OfflinePages.db*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/Offline Pages/metadata/OfflinePages.db*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/Offline Pages/metadata/OfflinePages.db*</i></li></ul><b>For googleDuo module</b><ul><li>No file found for regex <i>*/com.google.android.apps.tachyon/databases/tachyon.db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.tachyon/files/media/*.*</i></li></ul><b>For burnerUser module</b><ul><li>No file found for regex <i>*/data/data/com.adhoclabs.burner/databases/burnerDatabase.db*</i></li></ul><b>For ChessWithFriends module</b><ul><li>No file found for regex <i>*/com.zynga.chess.googleplay/databases/wf_database.sqlite</i></li></ul><ul><li>No file found for regex <i>*/data/data/com.zynga.chess.googleplay/db/wf_database.sqlite</i></li></ul><b>For Viber module</b><ul><li>No file found for regex <i>*/com.viber.voip/databases/*</i></li></ul><b>For userDict module</b><ul><li>No file found for regex <i>*/com.android.providers.userdictionary/databases/user_dict.db*</i></li></ul><b>For twitter module</b><ul><li>No file found for regex <i>*/com.twitter.android/databases/*-search.db*</i></li></ul><b>For Zapya module</b><ul><li>No file found for regex <i>*/com.dewmobile.kuaiya.play/databases/transfer20.db*</i></li></ul><b>For FCM_Outlook module</b><ul><li>No file found for regex <i>*/fcm_queued_messages.ldb/*</i></li></ul><b>For FilesByGoogle module</b><ul><li>No file found for regex <i>*/com.google.android.apps.nbu.files/databases/files_master_database*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.nbu.files/databases/search_history_database*</i></li></ul><b>For Call logs  module</b><ul><li>No file found for regex <i>*/com.android.providers.contacts/databases/calllog.db*</i></li></ul><ul><li>No file found for regex <i>*/com.samsung.android.providers.contacts/databases/calllog.db*</i></li></ul><b>For cmh module</b><ul><li>No file found for regex <i>*/cmh.db</i></li></ul><b>For MapWalkActivities module</b><ul><li>No file found for regex <i>*com.mapmywalk.android2/databases/workout.db*</i></li></ul><b>For App Locker DB module</b><ul><li>No file found for regex <i>*/.privacy_safe/db/privacy_safe.db</i></li></ul><b>For slopes module</b><ul><li>No file found for regex <i>*/com.consumedbycode.slopes/databases/slopes.db*</i></li></ul><b>For wellbeing module</b><ul><li>No file found for regex <i>*/com.google.android.apps.wellbeing/databases/app_usage*</i></li></ul><b>For ChromeCookies module</b><ul><li>No file found for regex <i>*/app_chrome/Default/Cookies*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/Cookies*</i></li></ul><ul><li>No file found for regex <i>*/app_opera/Cookies*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/Cookies*</i></li></ul><b>For PumaUsers module</b><ul><li>No file found for regex <i>*com.pumapumatrac/databases/pumatrac-db*</i></li></ul><b>For chatgpt module</b><ul><li>No file found for regex <i>**/com.openai.chatgpt/databases/*.*</i></li></ul><ul><li>No file found for regex <i>**/com.openai.chatgpt/files/datastore/*.*</i></li></ul><ul><li>No file found for regex <i>**/com.openai.chatgpt/shared_prefs/*</i></li></ul><ul><li>No file found for regex <i>**/com.openai.chatgpt/cache/files/*</i></li></ul><b>For mega_transfers module</b><ul><li>No file found for regex <i>*/mega.privacy.android.app/databases/megapreferences</i></li></ul><b>For appopSetupWiz module</b><ul><li>No file found for regex <i>*/system/appops.xml</i></li></ul><b>For skout module</b><ul><li>No file found for regex <i>*/com.skout.android/databases/skoutDatabase*</i></li></ul><b>For App Locker Pat module</b><ul><li>No file found for regex <i>*/com.hld.anzenbokusufake/shared_prefs/share_privacy_safe.xml</i></li></ul><b>For RunkeeperUser module</b><ul><li>No file found for regex <i>*/com.fitnesskeeper.runkeeper.pro/shared_prefs/com.fitnesskeeper.runkeeper.pro_preferences*</i></li></ul><b>For permissions module</b><ul><li>No file found for regex <i>*/system/packages.xml</i></li></ul><b>For GooglemapaudioT module</b><ul><li>No file found for regex <i>*/com.google.android.apps.maps/app_tts-temp/**</i></li></ul><b>For get_linkedin_account module</b><ul><li>No file found for regex <i>*/com.linkedin.android/shared_prefs/linkedInPrefsName.xml</i></li></ul><b>For get_linkedin_messages module</b><ul><li>No file found for regex <i>*/com.linkedin.android/databases/messenger-sdk*</i></li></ul><b>For tikTok module</b><ul><li>No file found for regex <i>*_im.db*</i></li></ul><ul><li>No file found for regex <i>*db_im_xx*</i></li></ul><b>For FCM_Jungrammer module</b><ul><li>No file found for regex <i>*/fcm_queued_messages.ldb/*</i></li></ul><b>For One Drive module</b><ul><li>No file found for regex <i>*/com.microsoft.skydrive/files/QTMetadata.db*</i></li></ul><b>For mega module</b><ul><li>No file found for regex <i>*/mega.privacy.android.app/karere-*.db*</i></li></ul><b>For sChats module</b><ul><li>No file found for regex <i>*/data/com.sideline.phone.number/databases/textfree*</i></li></ul><b>For SimpleStorage_applaunch module</b><ul><li>No file found for regex <i>*/com.google.android.as/databases/SimpleStorage*</i></li></ul><b>For GarminStressAPI module</b><ul><li>No file found for regex <i>*/garmin.api/stress*</i></li></ul><b>For packageGplinks module</b><ul><li>No file found for regex <i>*/system/packages.list</i></li></ul><b>For Chrome module</b><ul><li>No file found for regex <i>*/app_chrome/Default/History*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/History*</i></li></ul><ul><li>No file found for regex <i>*/app_opera/History*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/History*</i></li></ul><b>For GarminWeight module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For Samsung Honeyboard Clipboard Historty module</b><ul><li>No file found for regex <i>*/com.samsung.android.honeyboard/databases/ClipItem*</i></li></ul><b>For Samsung Honeyboard Clipboard Screenshot module</b><ul><li>No file found for regex <i>*/com.samsung.android.honeyboard/clipboard/*/clip</i></li></ul><b>For GoogleTasks module</b><ul><li>No file found for regex <i>*/com.google.android.apps.tasks/files/tasks-*/data.db</i></li></ul><b>For Gallery Trash module</b><ul><li>No file found for regex <i>*/data/com.sec.android.gallery3d/databases/local.db*</i></li></ul><ul><li>No file found for regex <i>*/data/com.sec.android.gallery3d/files/.Trash/**</i></li></ul><b>For Cello module</b><ul><li>No file found for regex <i>*/com.google.android.apps.docs/app_cello/*/cello.db*</i></li></ul><ul><li>No file found for regex <i>*/com.google.android.apps.docs/files/shiny_blobs/blobs/*</i></li></ul><b>For waze module</b><ul><li>No file found for regex <i>*/com.waze/user.db*</i></li></ul><b>For smyfilesStored module</b><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/databases/FileCache.db*</i></li></ul><b>For smyfilescache module</b><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/databases/FileCache.db*</i></li></ul><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/cache/*.*</i></li></ul><b>For sharedProto module</b><ul><li>No file found for regex <i>*/data/com.sec.android.app.sbrowser/app_sbrowser/Default/shared_proto_db/*</i></li></ul><b>For ChromeTopSites module</b><ul><li>No file found for regex <i>*/app_chrome/Default/Top Sites*</i></li></ul><ul><li>No file found for regex <i>*/app_sbrowser/Default/Top Sites*</i></li></ul><ul><li>No file found for regex <i>*/app_opera/Top Sites*</i></li></ul><ul><li>No file found for regex <i>*/app_webview/Default/Top Sites*</i></li></ul><b>For Strava module</b><ul><li>No file found for regex <i>*/com.strava/files*</i></li></ul><b>For InstalledappsVending module</b><ul><li>No file found for regex <i>*/com.android.vending/databases/localappstate.db*</i></li></ul><b>For kijijiConversations module</b><ul><li>No file found for regex <i>*/com.ebay.kijiji.ca/databases/messageBoxDatabase.*</i></li></ul><b>For ClipBoard module</b><ul><li>No file found for regex <i>*/*clipboard/*/*</i></li></ul><b>For last_boot_time module</b><ul><li>No file found for regex <i>*/misc/bootstat/last_boot_time_utc</i></li></ul><b>For ChessComAcct module</b><ul><li>No file found for regex <i>*/com.chess/shared_prefs/com.chess.app.login_credentials.xml</i></li></ul><ul><li>No file found for regex <i>*/data/data/com.chess/shared_prefs/com.chess.app.session_preferences.xml</i></li></ul><b>For BadooConnections module</b><ul><li>No file found for regex <i>*com.badoo.mobile/databases/CombinedConnectionsDatabase*</i></li></ul><b>For skype module</b><ul><li>No file found for regex <i>*/com.skype.raider/databases/live*</i></li></ul><b>For chatgpt2 module</b><ul><li>No file found for regex <i>*/data/data/com.openai.chatgpt/databases/*conversations.db*</i></li></ul><b>For Bluetooth Connections module</b><ul><li>No file found for regex <i>*/misc/bluedroid/bt_config.conf</i></li></ul><b>For samsungSmartThings module</b><ul><li>No file found for regex <i>*/com.samsung.android.oneconnect/databases/QcDB.db*</i></li></ul><b>For GarminDailiesAPI module</b><ul><li>No file found for regex <i>*/garmin.api/daily*</i></li></ul><b>For Tusky module</b><ul><li>No file found for regex <i>*/com.keylesspalace.tusky/databases/tuskyDB*</i></li></ul><b>For HideX module</b><ul><li>No file found for regex <i>*/com.flatfish.cal.privacy/databases/hidex.db*</i></li></ul><b>For FirefoxDownloads module</b><ul><li>No file found for regex <i>*/org.mozilla.firefox/databases/mozac_downloads_database*</i></li></ul><b>For usagestats module</b><ul><li>No file found for regex <i>*/system/usagestats/*</i></li></ul><ul><li>No file found for regex <i>*/system_ce/*/usagestats*</i></li></ul><b>For Cash App module</b><ul><li>No file found for regex <i>*/com.squareup.cash/databases/cash_money.db*</i></li></ul><b>For MapUsers module</b><ul><li>No file found for regex <i>*com.mapmywalk.android2/databases/mmdk_user*</i></li></ul><b>For pages module</b><ul><li>No file found for regex <i>*/*.mhtml</i></li></ul><ul><li>No file found for regex <i>*/*.mht</i></li></ul><b>For Turbo_AppUsage module</b><ul><li>No file found for regex <i>*/com.google.android.apps.turbo/shared_prefs/app_usage_stats.xml</i></li></ul><b>For smyfilesOpHistory module</b><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/databases/OperationHistory.db*</i></li></ul><b>For NQVault module</b><ul><li>No file found for regex <i>*/emulated/0/Android/data/com.netqin.ps/files/Documents/SystemAndroid/Data/322w465ay423xy11</i></li></ul><ul><li>No file found for regex <i>*/SystemAndroid/Data/**</i></li></ul><ul><li>No file found for regex <i>/media/0/SystemAndroid/Data/322w465ay423xy11</i></li></ul><b>For vaulty_files module</b><ul><li>No file found for regex <i>*/com.theronrogers.vaultyfree/databases/media.db</i></li></ul><b>For wellbeingaccount module</b><ul><li>No file found for regex <i>*/com.google.android.apps.wellbeing/files/AccountData.pb</i></li></ul><b>For DocList' module</b><ul><li>No file found for regex <i>*/com.google.android.apps.docs/databases/DocList.db*</i></li></ul><b>For duckduckgo_bookmarks module</b><ul><li>No file found for regex <i>*/com.duckduckgo.mobile.android/databases/app.db*</i></li></ul><b>For duckduckgo_favorites module</b><ul><li>No file found for regex <i>*/com.duckduckgo.mobile.android/databases/app.db*</i></li></ul><b>For duckduckgo_history module</b><ul><li>No file found for regex <i>*/com.duckduckgo.mobile.android/databases/history.db*</i></li></ul><b>For duckduckgo_opentabs module</b><ul><li>No file found for regex <i>*/com.duckduckgo.mobile.android/databases/app.db*</i></li></ul><b>For duckduckgo_thumbnails module</b><ul><li>No file found for regex <i>*/com.duckduckgo.mobile.android/cache/tabPreviews/*/*.jpg</i></li></ul><b>For InstalledappsLibrary module</b><ul><li>No file found for regex <i>*/com.android.vending/databases/library.db*</i></li></ul><b>For GarminSync module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/sync_cache*</i></li></ul><b>For knuddels_chats module</b><ul><li>No file found for regex <i>*/com.knuddels.android/databases/knuddels*</i></li></ul><b>For textnow module</b><ul><li>No file found for regex <i>*/com.enflick.android.TextNow/databases/textnow_data.db*</i></li></ul><b>For GarminSleepAPI module</b><ul><li>No file found for regex <i>*/garmin.api/sleep*</i></li></ul><b>For googleLastTrip module</b><ul><li>No file found for regex <i>*/com.google.android.apps.maps/files/saved_directions.data.cs</i></li></ul><b>For NikeActivityMoments module</b><ul><li>No file found for regex <i>*/com.nike.plusgps/databases/com.nike.nrc.room*</i></li></ul><b>For rarlabPreferences module</b><ul><li>No file found for regex <i>*/com.rarlab.rar_preferences.xml</i></li></ul><b>For powerOffReset module</b><ul><li>No file found for regex <i>*/log/power_off_reset_reason.txt</i></li></ul><ul><li>No file found for regex <i>*/log/power_off_reset_reason_backup.txt</i></li></ul><b>For setupWizardinfo module</b><ul><li>No file found for regex <i>*/com.google.android.settings.intelligence/shared_prefs/setup_wizard_info.xml</i></li></ul><b>For Quicksearch module</b><ul><li>No file found for regex <i>*/com.google.android.googlequicksearchbox/app_session/*.binarypb</i></li></ul><b>For GarminPolyAPI module</b><ul><li>No file found for regex <i>*/garmin.api/activity_details*</i></li></ul><b>For appIcons module</b><ul><li>No file found for regex <i>*/com.google.android.apps.nexuslauncher/databases/app_icons.db*</i></li></ul><b>For blueskyposts module</b><ul><li>No file found for regex <i>*/xyz.blueskyweb.app/cache/http-cache/*.*</i></li></ul><b>For smyfilesRecents module</b><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/databases/myfiles.db*</i></li></ul><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/databases/FileInfo.db*</i></li></ul><b>For blueskymessages module</b><ul><li>No file found for regex <i>*/xyz.blueskyweb.app/databases/RKStorage*</i></li></ul><ul><li>No file found for regex <i>*/xyz.blueskyweb.app/cache/http-cache/*.*</i></li></ul><b>For smyFiles2 module</b><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/databases/FileInfo.db</i></li></ul><ul><li>No file found for regex <i>*/com.sec.android.app.myfiles/cache/*.*</i></li></ul><b>For bittorrentDlhist module</b><ul><li>No file found for regex <i>*/dlhistory*.config.bak</i></li></ul><ul><li>No file found for regex <i>*/dlhistory*.config</i></li></ul><b>For HealthMateAccounts module</b><ul><li>No file found for regex <i>*/com.withings.wiscale2/databases/Withings-WiScale*</i></li></ul><b>For HealthMateTrackings module</b><ul><li>No file found for regex <i>*/com.withings.wiscale2/databases/room-healthmate*</i></li></ul><ul><li>No file found for regex <i>*/com.withings.wiscale2/databases/Withings-WiScale*</i></li></ul><b>For HealthMateLocations module</b><ul><li>No file found for regex <i>*/com.withings.wiscale2/databases/room-healthmate*</i></li></ul><b>For HealthMateMessages module</b><ul><li>No file found for regex <i>*/com.withings.wiscale2/databases/Withings-WiScale*</i></li></ul><b>For HealthMateContacts module</b><ul><li>No file found for regex <i>*/com.withings.wiscale2/databases/room-healthmate*</i></li></ul><b>For HealthMateMeasurements module</b><ul><li>No file found for regex <i>*/com.withings.wiscale2/databases/Withings-WiScale*</i></li></ul><b>For HealthMateDevices module</b><ul><li>No file found for regex <i>*/com.withings.wiscale2/databases/Withings-WiScale*</i></li></ul><b>For torThumbs module</b><ul><li>No file found for regex <i>*/org.torproject.torbrowser/cache/mozac_browser_thumbnails/thumbnails/*.0</i></li></ul><b>For Wire User Profile module</b><ul><li>No file found for regex <i>*/com.wire/**</i></li></ul><b>For Wire Contacts module</b><ul><li>No file found for regex <i>*/com.wire/**</i></li></ul><b>For Wire Messages module</b><ul><li>No file found for regex <i>*/com.wire/**</i></li></ul><b>For AdidasActivities module</b><ul><li>No file found for regex <i>*/com.runtastic.android/databases/db*</i></li></ul><b>For BitTorrent Prefs module</b><ul><li>No file found for regex <i>*/com.bittorrent.client/shared_prefs/com.bittorrent.client_preferences.xml</i></li></ul><b>For FirefoxTopSites module</b><ul><li>No file found for regex <i>*/org.mozilla.firefox/databases/top_sites*</i></li></ul><b>For Googlemaplocation module</b><ul><li>No file found for regex <i>*/com.google.android.apps.maps/databases/da_destination_history*</i></li></ul><b>For GarminHRAPI module</b><ul><li>No file found for regex <i>*/garmin.api/heart_rate*</i></li></ul><b>For GarminUser module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/shared_prefs/gcm_user_preferences*</i></li></ul><b>For installedappsGass module</b><ul><li>No file found for regex <i>*/com.google.android.gms/databases/gass.db*</i></li></ul><ul><li>No file found for regex <i>*/user/*/com.google.android.gms/databases/gass.db*</i></li></ul><b>For samsungWeatherClock module</b><ul><li>No file found for regex <i>*/com.sec.android.daemonapp/databases/WeatherClock*</i></li></ul><b>For appSemloc module</b><ul><li>No file found for regex <i>*/com.google.android.gms/app_semanticlocation_rawsignal_db/*</i></li></ul><b>For NikePolyline module</b><ul><li>No file found for regex <i>*/com.nike.plusgps/databases/com.nike.nrc.room*</i></li></ul><b>For GarminActivities module</b><ul><li>No file found for regex <i>*/com.garmin.android.apps.connectmobile/databases/cache-database*</i></li></ul><b>For mewe module</b><ul><li>No file found for regex <i>*/com.mewe/databases/app_database</i></li></ul><ul><li>No file found for regex <i>*/com.mewe/shared_prefs/SGSession.xml</i></li></ul><b>For MeetMe module</b><ul><li>No file found for regex <i>*\data\com.myyearbook.m\databases\chats.db*</i></li></ul><b>For lgRCS module</b><ul><li>No file found for regex <i>*/mmssms.db*</i></li></ul><b>For VerizonRDD-WIFI module</b><ul><li>No file found for regex <i>*/com.verizon.mips.services/databases/RDD_WIFI_DATA_DATABASE</i></li></ul><b>For AVG module</b><ul><li>No file found for regex <i>*/com.antivirus/shared_prefs/PinSettingsImpl.xml</i></li></ul><ul><li>No file found for regex <i>*/Vault/*</i></li></ul><b>For burnerMessages module</b><ul><li>No file found for regex <i>*/data/data/com.adhoclabs.burner/databases/burnerDatabase.db*</i></li></ul><b>For Life360 module</b><ul><li>No file found for regex <i>*/com.life360.android.safetymapd/databases/messaging.db*</i></li></ul><ul><li>No file found for regex <i>*/com.life360.android.safetymapd/databases/L360LocalStoreRoomDatabase*</i></li></ul><ul><li>No file found for regex <i>*/com.life360.android.safetymapd/databases/L360EventStore.db*</i></li></ul><b>For kijijiRecentSearches module</b><ul><li>No file found for regex <i>*/com.ebay.kijiji.ca/databases/searches.*</i></li></ul></div>
+    </div>
+</div>
+                <br /><br /><br />
+                <div class="text-center">
+                    <br />
+                    <div class="card bg-white mb-3" style="max-width: 500px; margin:auto">
+                        <div class="row no-gutters">
+                            <center><div class="col-md-4">
+                                <img src="_elements/logo.png" class="card-img" alt="ALEAPP logo">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body" style="height: 200px;">
+                                <h5 class="card-title">Thank you for using ALEAPP</h5>
+                                <p class="card-text">
+                                    Support open source and report any bugs!
+                                </p>
+                                <!--Github-->
+                                <a class="btn-floating btn-git" type="button" role="button" href="https://github.com/abrignoni/aleapp" target="_blank"><i class="fab fa-github"></i> Project Home </a>
+                                <p class="card-text fadeIn"><small class="text-muted">ALEAPP Team</small></p>
+                            </div>
+                            </div></center>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div><!--end text-center area-->
+
+    <div class="alert alert-light mb-4 bg-white" style="border-style: none">
+        <h4 class="text-center">ALEAPP contributors</h4>
+        <ul class="list-group" style="max-width: 500px; margin:auto">
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Alexis Brignoni
+                <span>
+                    <a href="https://abrignoni.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@AlexisBrignoni" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/abrignoni" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Yogesh Khatri
+                <span>
+                    <a href="https://swiftforensics.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@SwiftForensics" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/ydkhatri" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Alex Caithness
+                <span>
+                    <a href="https://www.linkedin.com/in/alex-caithness-a7504151/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@kviddy" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/cclgroupltd" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Kevin Pagano
+                <span>
+                    <a href="https://stark4n6.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@KevinPagano3" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/stark4n6" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Josh Hickman
+                <span>
+                    <a href="https://thebinaryhick.blog/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@josh_hickman1" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Troy Schnack
+                <span>
+                    <a href="https://troy4n6.blogspot.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@TroySchnack" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>B Krishna Sai Nihith
+                <span>
+                    <a href="https://g4rud4.gitlab.io" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@_Nihith" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/bolisettynihith" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Geraldine Blay
+                <span>
+                    <a href="https://gforce4n6.blogspot.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@i_am_the_gia" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Bo Amos
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@Bo_Knows_65" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Andrea Canepa
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<a href="https://github.com/A-725-K" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Incidentalchewtoy
+                <span>
+                    <a href="https://theincidentalchewtoy.wordpress.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@4n6chewtoy" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>LoicForensics
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Fabian Nunes
+                <span>
+                    <a href="https://www.linkedin.com/in/fabian-nunes/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<a href="https://github.com/fabian-nunes" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Evangelos Dragonas
+                <span>
+                    <a href="https://atropos4n6.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@theAtropos4n6" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/theAtropos4n6" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>James Habben
+                <span>
+                    <a href="https://4n6ir.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@JamesHabben" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/JamesHabben" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Matt Beers
+                <span>
+                    <a href="https://www.linkedin.com/in/mattbeersii" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<a href="https://github.com/dabeersboys" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Heather Charpentier
+                <span>
+                    <a href="https://www.linkedin.com/in/heather-charpentier-bb28b031/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<a href="https://github.com/charpy4n6" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Panos Nakoutis
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@4n6equals10" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Johann Polewczyk
+                <span>
+                    <a href="https://www.linkedin.com/in/johann-polewczyk-6a905425/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@johannplw" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/Johann-PLW" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Bruno Fischer
+                <span>
+                    <a href="https://german4n6.blogspot.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<a href="https://github.com/BrunoFischerGermany" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Marco Neumann
+                <span>
+                    <a href="https://bebinary4n6.blogspot.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@kalinko4n6" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/kalink0" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Marc Seguin
+                <span>
+                    <a href="https://segumarc.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@segumarc" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/segumarc" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Anthony Reince
+                <span>
+                    <a href="https://www.linkedin.com/in/anthony-reince-a60115239/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Damien Attoe
+                <span>
+                    <a href="https://digital4n6withdamien.blogspot.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@AttoeDamien" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/SpyderForensics" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Anna Kirpichnikova
+                <span>
+                    <a href="https://www.linkedin.com/in/anna-kirpichnikova-a4819a10b/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<a href="https://github.com/As-arsenicum-33" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+        </ul>
+    </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <!-- Chart.js -->
+    <script type="text/javascript" src="_elements/chart.umd.min.js"></script>
+    <script type="text/javascript" src="_elements/moment.min.js"></script>
+    <script type="text/javascript" src="_elements/timeline/js/timeline.min.js"></script>
+    <!-- Garmin Functions -->
+    <script type="text/javascript" src="_elements/garmin-functions.js"></script>
+    <script type="text/javascript" src="_elements/chat.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>
