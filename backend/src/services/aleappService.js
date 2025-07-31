@@ -41,16 +41,7 @@ function runAleapp(inputFolder, extension) {
       const reportDir = path.join(aleappOutputFolder, subdirs[0]);
 
       console.log("subdirs:",subdirs)
-      // Move contents up one level
-      fs.readdirSync(reportDir).forEach(item => {
-        fs.renameSync(
-          path.join(reportDir, item),
-          path.join(aleappOutputFolder, item)
-        );
-      });
-
-      fs.rmSync(reportDir, { recursive: true, force: true }); 
-
+  
       const reportUrl = `http://localhost:4000/reports/aleapp/${path.basename(aleappOutputFolder)}/${subdirs}/_HTML/index.html`;
 
       resolve({
